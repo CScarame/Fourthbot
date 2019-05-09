@@ -11,7 +11,7 @@ async def on_ready():
     logging.debug("Discord connection made.")
     logging.info("Logging in as:{0} : {1}".format(bot.user.name,bot.user.id))
     print("Logged in as\n{0}\n{1}".format(bot.user.name,bot.user.id))
-    bot.load_extension("Cogs.Basic")
+    bot.load_extension("Cogs.XP")
 
 @bot.event
 async def on_command(ctx):
