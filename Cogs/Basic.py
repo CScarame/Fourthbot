@@ -18,8 +18,9 @@ OOF_RESPONSES = ["Big oof, my dudes",
     "You tried", 
     "May I ask why you need this crowdsourcing data?", 
     "Good job team. This is what I've come to expect from you.", 
-    "What does this question mean?",]
-OOF_RESPONSES_P = [100, 20, 10, 20, 5, 7, 10, 1, 3, 1]
+    "What does this question mean?",
+    "Keep your *stupid* comments in your pocket!"]
+OOF_RESPONSES_P = [100, 20, 10, 20, 5, 7, 10, 1, 3, 1, 20]
 
 def setup(bot):
     bot.add_cog(Basic(bot))
