@@ -41,7 +41,7 @@ class XP(commands.Cog):
         # Start output
         msg = '```'
         for character in raw_data:
-            if author == character[0] or author in self.dms and character[0] is not 'Player':
+            if author == character[0] or author in self .dms and character[0] is not 'Player':
                 if not specific_flag or character[1].lower() in specific_char:
                     msg = msg + '{:10}{:5} XP Level {:3}({:5} XP to next level)\n'.format(character[1],
                                                 character[4],character[5],character[6])
@@ -52,7 +52,44 @@ class XP(commands.Cog):
 
     @commands.command(help="current command")
     async def current(self,ctx):
-        await ctx.send("Inplementation in progress")
+        words = ctx.message.content.split()
+        ## Specific flag for if a specific character is chosen
+        specific_flag = False
+        specfic_char = ''
+        if len(words) >= 2:
+            specific_flag = True
+            specific_char = words[1]
+        author_id = ctx.message.author.id
+        author = self.users[str(author_id)]
+        raw_data = self.handler.read('Character Chart!A:G')
+        with open('config/current_characters.json','r') as current_file:
+            current = json.load(current_file)
+        msg = ''
+        if specific_flag == True:
+            for character in raw_data:
+                if author == character[0] and specific_char == character[1]:
+                    current[author] = specific_char
+                    msg =       'I set your current character as \n'
+                    msg = msg + '```{:10}{:5} XP Level {:3}({:5} XP to next level)```'.format(
+                        character[1],character[4],character[5],character[6])
+                    with open('config/current_characters.json','w') as current_file:
+                        json.dump(current, current_file)
+                if msg == '':
+                    msg = 'I didn\'t recognize the character you listed.  Here are your current characters:\n```'
+                    for character in raw_data:
+                        if author == character[0]:
+                            msg = msg + '{:10}'.format(character[1])
+                    msg = msg + '```\nUse **!current (character)** to switch characters.'
+                    msg = msg + 'Be sure to use proper capitalization.'
+        elif author in self.dms:
+            msg = msg + 'Current Character:\n```'
+            for player in current:
+                msg = msg + '{:10}:{:10}\n'.format(player,current[player])
+            msg = msg + '```'
+        else:
+            msg = 'Your current character is\n```{:10}```\n'.format(current[author])
+            msg = msg + 'To switch to a different character use **!current (character)**'    
+        await ctx.send(msg)
 
     @commands.command(help="bank command")
     async def bank(self, ctx):
