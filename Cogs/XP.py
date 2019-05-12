@@ -5,6 +5,7 @@ import logging
 import googleHandler
 import json
 import os
+import datetime
 
 def setup(bot):
     bot.add_cog(XP(bot))
@@ -93,11 +94,72 @@ class XP(commands.Cog):
 
     @commands.command(help="bank command")
     async def bank(self, ctx):
-        await ctx.send("Implementation in progress")
+        words = ctx.message.content.split()
+        author_id = ctx.message.author.id
+        author = self.users[str(author_id)]
+        if len(words) == 1: # Simple bank check call
+            raw_data = self.handler.read('Bank Chart!A:C')
+            if not author in self.dms:
+                for player in raw_data:
+                    if player[0] == author:
+                        msg = 'You currently have **{}** banked xp\n'.format(str(player[1]))
+                        msg = msg + 'To spend xp use **!bank (character) (amount) confirm**'
+            else:
+                msg = 'Players\' banked xp:\n```'
+                for player in raw_data:
+                    msg = msg + '{:8}:{:4}\n'.format(player[0],str(player[1]))
+                msg = msg + '```'
+        else: # call to change values
+            character_flag = False
+            spend_flag = False
+            confirm_flag = False
+            raw_data = self.handler.read('Bank Chart!A:B')
+            characters = set() ### Creating list of potential characters
+            for player in raw_data:
+                if author == player[0]:
+                    max_spend = int(player[1])
+            for word in words[1:]:
+                if word in characters and not character_flag:
+                    character = word
+                    character_flag = True
+                if word.isdigit() and int(word) <= max_spend and not spend_flag:
+                    spend = word
+                    spend_flag = True
+                if word == 'Confirm' or word == 'corfirm':
+                    confirm_flag = True
+            if not character_flag:
+                msg = "I didn't recognize which character you want to spend on.  Use !xp if you forget your character names."
+            elif not spend_flag:
+                msg = "I didn't recognize a number of points to spend.  Don't use anything but numbers for that."
+            elif not confirm_flag:
+                msg = "Enter the same command, with \"Confirm\" after it in order to confirm your spending"
+            else: #Date, Author, Player, Character, Debits, Credits, Delta
+                self.handler.append('Bank Tracker!A:G',[[str(datetime.date.today()),author,author, character, '0', spend, '-'+spend]])
+                msg = "Confirmed! {} gained {} xp!".format(character, str(spend))
+        await ctx.send(msg)
 
     @commands.command(help="session command")
     async def session(self,ctx):
-        await ctx.send("Implementation in progress")
+        words = ctx.message.content.split()
+        author_id = ctx.message.author.id
+        author = self.users[str(author_id)]
+        if len(words) == 1: # Help call
+            msg = "DMs can use this command in order to award session xp.  Any awarded XP will show up in the #announcements thread"
+        else:
+            if not author in self.dms:
+                msg = "Sorry kid.  You have to be running the game to use this command."
+            else:
+                session_data = []
+                points = words[1]
+                msg = "The following characters have been awarded {} xp for a session\n```".format(points)
+                with open('config/current_characters.json','r') as current_file:
+                    current = json.load(current_file)
+                    for player in current:
+                        session_data.append([str(datetime.date.today()),author,player,current[player],points])
+                        msg = msg + "{:10}\n".format(current[player])
+                    msg = msg + "```"
+                self.handler.append('Session Tracker!A:E', session_data)
+        await ctx.send(msg)
 
     @commands.command(help="bonus command")
     async def bonus(self, ctx):
