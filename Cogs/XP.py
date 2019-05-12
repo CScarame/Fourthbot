@@ -163,4 +163,27 @@ class XP(commands.Cog):
 
     @commands.command(help="bonus command")
     async def bonus(self, ctx):
-        await ctx.send("Implementation in Progress")
+        words = ctx.message.content.split()
+        author_id = ctx.message.author.id
+        author = self.users[str(author_id)]
+        if author not in self.dms:
+            msg = "Sorry kid.  You have to be running the game to use this command."
+        else:
+            player_flag = False
+            number_flag = False
+            with open('config/character_chats.json','r') as cc_file:
+                chats = json.load(cc_file)
+                if str(ctx.message.channel.id) in chats:
+                    player_flag = True
+                    player = chats[str(ctx.message.channel.id)]
+                if words[1].isdigit():
+                    number_flag = True
+                    number = int(words[1])
+            
+            if not player_flag or not number_flag:
+                msg = "No xp awarded because message did not parse correctly."
+            else:
+                session_data = [[str(datetime.date.today()),author, player, "",str(number),"0",str(number)]]
+                self.handler.append('Bank Tracker!A:G', session_data)
+                msg = "{} awarded {} {} bonus xp.  Congrats!".format(author,player,str(number))
+        await ctx.send(msg)

@@ -916,3 +916,41 @@ INFO:googleapiclient.discovery:URL being requested: POST https://sheets.googleap
 INFO:root:Received |session| command from |Scarybone|
 INFO:googleapiclient.discovery:URL being requested: POST https://sheets.googleapis.com/v4/spreadsheets/1dVZlsgtbUq0MGWV4kBg7m6Kwv2kQtbBd88KFHq9uumo/values/Session%20Tracker%21A%3AE:append?valueInputOption=USER_ENTERED&alt=json
 INFO:root:Received |session| command from |Scarybone|
+INFO:googleapiclient.discovery:URL being requested: GET https://sheets.googleapis.com/v4/spreadsheets/1dVZlsgtbUq0MGWV4kBg7m6Kwv2kQtbBd88KFHq9uumo/values/Character%20Chart%21A2%3AG13?alt=json
+INFO:root:Received |xp| command from |Father Fujimoto|
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6&compress=zlib-stream
+INFO:discord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:discord.gateway:Shard ID None has connected to Gateway: gateway-prd-main-t1cv, discord-sessions-prd-1-2 (Session ID: bcf365c4eb6e9cb56eb674a7e615e0b2).
+INFO:root:Logging in as:Party-Bot : 438288661398683650
+WARNING:googleapiclient.discovery_cache:file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+Traceback (most recent call last):
+  File "C:\Users\scary\AppData\Local\Programs\Python\Python36\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 36, in autodetect
+    from google.appengine.api import memcache
+ModuleNotFoundError: No module named 'google.appengine'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\scary\AppData\Local\Programs\Python\Python36\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 33, in <module>
+    from oauth2client.contrib.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\scary\AppData\Local\Programs\Python\Python36\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 37, in <module>
+    from oauth2client.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\scary\AppData\Local\Programs\Python\Python36\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "C:\Users\scary\AppData\Local\Programs\Python\Python36\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 41, in <module>
+    'file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth')
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+INFO:googleapiclient.discovery:URL being requested: GET https://www.googleapis.com/discovery/v1/apis/sheets/v4/rest
+INFO:googleapiclient.discovery:URL being requested: POST https://sheets.googleapis.com/v4/spreadsheets/1dVZlsgtbUq0MGWV4kBg7m6Kwv2kQtbBd88KFHq9uumo/values/Bank%20Tracker%21A%3AG:append?valueInputOption=USER_ENTERED&alt=json
+INFO:root:Received |bonus| command from |Scarybone|
