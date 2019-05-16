@@ -1,13 +1,20 @@
+#############
+## Basic.py
+## Author: Chris Scaramella and Brian Scaramella
+## Date: 5/15/2019
+## Testing out cogs and commands.  This file will be archived during the switch to v2.0
+#############
 import discord
 from discord.ext import commands
 
 import logging
 import random
 import re
+from datetime import datetime
 
+# Magic Variables
 UNOOF_PERCENT = 2
 B_OOF_PERCENT = 20
-
 OOF_RESPONSES = ["Big oof, my dudes", 
     "Aw fuck I can't believe you done this",
     "I'm not even surprised tbh", 
@@ -29,12 +36,14 @@ class Basic(commands.Cog):
     def __init__(self,bot):
         self.bot = bot
         logging.debug("Basic Cog loaded")
+        random.seed(datetime.now())
 
-    @commands.command(help="Help Text")
+    @commands.command(help="Say hello to the bot.")
     async def hi(self, ctx):
         msg = "Hello {0.message.author.mention}".format(ctx)
         await ctx.send(msg)
-
+    
+    #TODO: Find a better way to update the about command
     @commands.command(help="About this bot")
     async def about(self, ctx):
         msg = ("I am FourthBot v2.0.  I act as the 4th DM for the group.  You can ask "
@@ -43,10 +52,10 @@ class Basic(commands.Cog):
             "finished yet though!  Use !help to see all of my current commands.")
         await ctx.send(msg)
 
+    #TODO: Clarify oof command - Brian
     @commands.command(help="For those oofs that are bound to happen")
     async def oof(self, ctx):
         msg = random.choices(OOF_RESPONSES, weights=OOF_RESPONSES_P)[0]
-        
         r = random.random()
         if r < UNOOF_PERCENT/100.0:
             msg = (msg[0:10] + "... No... You know what? Not this time. I am rewinding time "
@@ -57,7 +66,8 @@ class Basic(commands.Cog):
             msg = msg.replace('B', ':b:')
         await ctx.send(msg)
     
-    @commands.command(help="Roll Dice")
+    #TODO: Add more syntax to roll command, and make it cleaner (maybe add a separate roll function?)
+    @commands.command(help="Roll dice how you would see the dice written (XdX)")
     async def roll(self, ctx):
         words = ctx.message.content.split()
         if len(words) == 1:
