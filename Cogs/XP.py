@@ -21,9 +21,6 @@ import os
 import datetime
 
 ## Magic Variables
-# Other
-DM_LIST         = ['Chris','Brian','Tommy']
-
 # Google
 GOOGLE_HANDLE   = '1dVZlsgtbUq0MGWV4kBg7m6Kwv2kQtbBd88KFHq9uumo'
 XP_LOCATION     = 'Character Chart!A2:G13'
@@ -55,8 +52,7 @@ class XP(commands.Cog):
         ## Get Important JSON files
         with open(JSON_USERS,'r') as users_file:
             self.users = json.load(users_file)
-        self.dms = DM_LIST
-
+    
     @commands.command(help="Use this command to check the xp of your characters")
     async def xp(self, ctx):
         ## Words is a list of words in the command
@@ -70,13 +66,14 @@ class XP(commands.Cog):
                 specific_char.append(character.lower())
         # Get author
         author_id = ctx.message.author.id
-        author = self.users[str(author_id)]
+        author    = self.users[str(author_id)]
+        roles     = (role.name for role in ctx.message.author.roles)
         # Get google raw_data
         raw_data = self.handler.read(XP_LOCATION)
         # Start output
         msg = '```'
         for character in raw_data:
-            if author == character[0] or author in self .dms:
+            if author == character[0] or 'DM' in roles:
                 if not specific_flag or character[1].lower() in specific_char:
                     msg = msg + '{:10}{:5} XP Level {:3}({:5} XP to next level)\n'.format(character[1],
                                                 character[4],character[5],character[6])
@@ -95,7 +92,8 @@ class XP(commands.Cog):
             specific_flag = True
             specific_char = words[1]
         author_id = ctx.message.author.id
-        author = self.users[str(author_id)]
+        author    = self.users[str(author_id)]
+        roles     = (role.name for role in ctx.message.author.roles)
         raw_data = self.handler.read(XP_LOCATION)
         with open(JSON_CURRENT,'r') as current_file:
             current = json.load(current_file)
@@ -116,7 +114,7 @@ class XP(commands.Cog):
                             msg = msg + '{:10}'.format(character[1])
                     msg = msg + '```\nUse **!current (character)** to switch characters.'
                     msg = msg + 'Be sure to use proper capitalization.'
-        elif author in self.dms:
+        elif 'DM' in roles:
             msg = msg + 'Current Character:\n```'
             for player in current:
                 msg = msg + '{:10}:{:10}\n'.format(player,current[player])
@@ -130,10 +128,11 @@ class XP(commands.Cog):
     async def bank(self, ctx):
         words = ctx.message.content.split()
         author_id = ctx.message.author.id
-        author = self.users[str(author_id)]
+        author    = self.users[str(author_id)]
+        roles     = (role.name for role in ctx.message.author.roles)
         if len(words) == 1: # Simple bank check call
             raw_data = self.handler.read(BANK_LOCATION)
-            if not author in self.dms:
+            if not 'DM' in roles:
                 for player in raw_data:
                     if player[0] == author:
                         msg = 'You currently have **{}** banked xp\n'.format(str(player[1]))
@@ -176,11 +175,12 @@ class XP(commands.Cog):
     async def session(self,ctx):
         words = ctx.message.content.split()
         author_id = ctx.message.author.id
-        author = self.users[str(author_id)]
+        author    = self.users[str(author_id)]
+        roles     = (role.name for role in ctx.message.author.roles)
         if len(words) == 1: # Help call
             msg = "DMs can use this command in order to award session xp.  Any awarded XP will show up in the #announcements thread"
         else:
-            if not author in self.dms:
+            if not 'DM' in roles:
                 msg = "Sorry kid.  You have to be running the game to use this command."
             else:
                 session_data = []
@@ -199,8 +199,9 @@ class XP(commands.Cog):
     async def bonus(self, ctx):
         words = ctx.message.content.split()
         author_id = ctx.message.author.id
-        author = self.users[str(author_id)]
-        if author not in self.dms:
+        author    = self.users[str(author_id)]
+        roles     = (role.name for role in ctx.message.author.roles)
+        if 'DM' in roles:
             msg = "Sorry kid.  You have to be running the game to use this command."
         else:
             player_flag = False
