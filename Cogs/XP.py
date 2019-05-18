@@ -87,7 +87,6 @@ class XP(commands.Cog):
         words = ctx.message.content.split()
         ## Specific flag for if a specific character is chosen
         specific_flag = False
-        specfic_char = ''
         if len(words) >= 2:
             specific_flag = True
             specific_char = words[1]
