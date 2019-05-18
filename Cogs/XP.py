@@ -67,7 +67,7 @@ class XP(commands.Cog):
         # Get author
         author_id = ctx.message.author.id
         author    = self.users[str(author_id)]
-        roles     = (role.name for role in ctx.message.author.roles)
+        roles     = list(role.name for role in ctx.message.author.roles)
         # Get google raw_data
         raw_data = self.handler.read(XP_LOCATION)
         # Start output
@@ -93,7 +93,7 @@ class XP(commands.Cog):
             specific_char = words[1]
         author_id = ctx.message.author.id
         author    = self.users[str(author_id)]
-        roles     = (role.name for role in ctx.message.author.roles)
+        roles     = list(role.name for role in ctx.message.author.roles)
         raw_data = self.handler.read(XP_LOCATION)
         with open(JSON_CURRENT,'r') as current_file:
             current = json.load(current_file)
@@ -129,7 +129,7 @@ class XP(commands.Cog):
         words = ctx.message.content.split()
         author_id = ctx.message.author.id
         author    = self.users[str(author_id)]
-        roles     = (role.name for role in ctx.message.author.roles)
+        roles     = list(role.name for role in ctx.message.author.roles)
         if len(words) == 1: # Simple bank check call
             raw_data = self.handler.read(BANK_LOCATION)
             if not 'DM' in roles:
@@ -176,7 +176,7 @@ class XP(commands.Cog):
         words = ctx.message.content.split()
         author_id = ctx.message.author.id
         author    = self.users[str(author_id)]
-        roles     = (role.name for role in ctx.message.author.roles)
+        roles     = list(role.name for role in ctx.message.author.roles)
         if len(words) == 1: # Help call
             msg = "DMs can use this command in order to award session xp.  Any awarded XP will show up in the #announcements thread"
         else:
@@ -200,7 +200,7 @@ class XP(commands.Cog):
         words = ctx.message.content.split()
         author_id = ctx.message.author.id
         author    = self.users[str(author_id)]
-        roles     = (role.name for role in ctx.message.author.roles)
+        roles     = list(role.name for role in ctx.message.author.roles)
         if 'DM' in roles:
             msg = "Sorry kid.  You have to be running the game to use this command."
         else:

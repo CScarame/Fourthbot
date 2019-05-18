@@ -51,6 +51,6 @@ if __name__ == "__main__":
             LOG_LEVEL = logging.DEBUG
     logging.basicConfig(filename="runtime.log",level=LOG_LEVEL)
     logging.debug("Starting program")
-    bot.run(DISCORD_TOKEN)
+    bot.run(DISCORD_TOKEN_PARTY)
 
 
