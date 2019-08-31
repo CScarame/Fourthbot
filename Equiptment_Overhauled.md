@@ -1,0 +1,501 @@
+# Equipment Overhauled v 0.2
+
+
+Greetings, comrade!  Dungeons and Dragons 5th Edition is a well thought out tabletop system that simplifies and streamlines gameplay and combat.  However, calculating how much weight a character is carrying is difficult to track, and characters being able to carry up to their carrying capacity with little to no downsides is a immersion breaking idea.  This ruleset can be added to the existing 5e system in order to make equipment more immersive and give players more interesting choices when deciding how to equip themselves for combat.
+
+## Item Slots
+
+Character inventory will now be managed using item slots instead of weight.  The slots an item occupies is an abstraction of its weight, size, and wieldyness. The storage capacity of bags, belts, sheathes, and your character's ability to carry that equipment are measured in slots.  The more item slots a character has avaliable, the more they can carry.  
+
+### Carrying Capacity
+
+Stronger characters are able to carry more without adverse effects while more hardy characters are able to better withstand being overloaded.  A character's base carrying capacity is a number of slots equal to their Strength ability score.  However, your character can choose to take on levels of encumbrance in order to increase their carrying capacity based on the table below.
+
+**Carry Capacity.**  A character's carrying capacity is equal to their Strength score.
+
+### Encumbrance
+
+A player holding more items than their carrying capacity will take on levels of encumbrance.  The following table describes how many extra slots a character can carry and how many levels of encumbrance they will take on based on their CON modifier.
+
+##### Extra Slots per Encumbrance Level
+
+| CON modifier |1   |2   |3   |4   |5   |6   |7   |8   |9   |10  |
+|:-------------|:---|:---|:---|:---|:---|:---|:---|:---|:---|:---|
+|+5            |+5  |+10 |+15 |+20 |+25 |+30 |+35 |+40 |+45 |+50 |
+|+4            |+4  |+8  |+12 |+16 |+20 |+24 |+28 |+32 |+36 |+40 |
+|+3            |+3  |+6  |+9  |+12 |+15 |+18 |+21 |+24 |+27 |+30 |
+|+2            |+2  |+4  |+6  |+8  |+10 |+12 |+14 |+16 |+18 |+20 |
+|+1            |+1  |+2  |+3  |+4  |+5  |+6  |+7  |+8  |+9  |+10 |
+|+0            |+1  |+2  |+2  |+3  |+3  |+4  |+4  |+5  |+5  |+6  |
+|-1            |+1  |+1  |+2  |+2  |+3  |+3  |+4  |+4  |+5  |+5  |
+|-2            |+0  |+1  |+1  |+1  |+2  |+2  |+2  |+3  |+3  |+3  |
+|-3            |+0  |+0  |+0  |+0  |+1  |+1  |+1  |+1  |+1  |+2  |
+
+
+Each encumbrance levels adds an additional negative effect during combat.  These effects stack until your character can no longer move.
+
+##### Combat Encumbrance
+
+|Encumbrance Levels|Adverse Effects|
+|---|---|
+|1| Reduce your Dodge by 2|
+|2| Reduce your Dodge to 0|
+|3| -5 speed|
+|4| Disadvantage on DEX saves|
+|5| Disadvantage on DEX ability checks|
+|6| -5 speed(-10 total)|
+|7| Disadvantage on attack rolls|
+|8| Disadvantage on all rolls|
+|9+| -5 speed(stacks until speed is 0)|
+
+##### Traveling Encumbrance
+
+|Encumbrance Levels|Adverse Effects|
+|---|---|
+|1-2| None|
+|3-6| Traveling distance reduced by 5 miles|
+|7-10| Traveling distance cut in half.  Take one level of exhaustion after 8 hours of traveling|
+|11+| Cannot travel|
+
+
+### Trinkets, Coins and Wallets
+
+Rings, keys, candles and other small items are classified as trinkets.  **Trinkets** are items that are too small and light to take up an item slot.  A **wallet** is a 1 slot item that has 10 trinket-slots for trinkets.  Each mini-slot can hold 1 trinket or 20 coins.  Therefore each wallet can hold 200 coins or 10 trinkets, or some combination of the two.  Without a wallet, coins and trinkets may get lost during travel or combat.  Each player starts with a free wallet that holds their starting coins and trinkets.  A wallet can be kept on a belt or in a backpack.
+
+Many gemstones are trinkets that are worth more than their weight in gold coins.  If a character doesn't have space to carry all of their gold, consider keeping gemstones of high values such as diamonds, which take up only on trinket slot, but are worth significantly more gold.
+
+On the item table, trikets are denoted by having a size of T(meaning trinket)
+
+\pagebreak
+
+### Collective items
+Some items, such as rations, ammuniton, or oil flasks can fit more than one into a single item slot.  For example, up to 5 cold rations or 20 arrows can fit in a single item slot.  While you can fit up to 5 rations in a single item slot, if you only have 1 ration, it still takes up an item slot, as does a single arrow.
+
+
+### Containers
+Carrying capacity tells how much a character can carry, but those items must be carried in containers.  Items can be carried in backpacks, belt pouches, sheathes, hands, etc.  Different containers offer different features for a character.
+
+#### Backpack
+The most popular container for essential items while traveling, the backpack, or knapsack, is versatile and has lots of space that the character can use.  A regularly sized backpack has space for 9 slots inside, and a bedroll and 50 ft of rope can be strapped to the top and sides.  However, the backpack isn't designed to be used during combat.  Grabbing an item out of the backpack during combat takes 1 action.  A backpack can be taken off and dropped as a free action, allowing characters to quickly prepare for combat.
+
+#### Belt
+A belt has space for 3 items and can only hold items that take 1 slot, such as potions, daggers, wallets or lanterns.  Any items in te belt can be accessed as a free action, since your character can quickly grab things out of their belt pouches, including any items in a wallet that are in the belt.  Belts are useful for small items that a character may want to use during combat such as a backup weapon, a spell focus, a potion, or a lantern.
+
+#### Quiver
+A quiver can hold 1 slots worth of ammunition and one ranged weapon.  Ammo can be grabbed from the quiver as part of the Attack action.  Pulling a ranged weapon off of a quiver costs a bonus action.
+
+#### Sheath
+A sheath is able to carry a melee weapons weighing up to 4 slots.  These weapons can be drawn using a bonus action.  The term sheath can refer to an actual leather sheath or scabbard, or a belt loop or strap that can hold the weapon.
+
+#### Sack
+Sometimes a backpack is not big enough to hold everything your character wants to carry.  A sack is a large bag that requires at least one hand to hold, but can typically hold up to 15 slots.  If a character is caught in combat while holding a sack, they may either drop the bag as a free action and risk damaging the items inside, or they may spend an action setting down the bag carefully.
+
+#### Trunk
+A trunk is a large container that requires two hands to hold.  It can carry up to 35 slots, and can be dropped as an action.
+
+#### Saddlebags
+A variant bag that can only be carried by beasts of burden.  Saddlebags can carry up to 20 item slots.  Beasts of burden with a higher carrying capacity can only carry more by using a cart or wagon of some sort.  
+
+## Armor Changes
+Armor is getting a big overhaul.  The biggest change to armor is the addition of the Dodge mechanic, which changes how DEX affects Armor Class.
+
+### Armor Class
+A character's armor class no longer depends on that character's DEX modifier.  Characters in light armor have lower AC than characters in heavy armor, which makes sense thematically and encourages the use of heavier armors.  Lightly armored characters are better at dodging a single attacker while heavily armored characters can better hold their own against many small attacks.
+
+#### Dodge
+Dextrous characters who are not impeded by their armor are able to use their mobility to avoid attacks.  All characters have one dodge action that refreshes at the start of their turn.  Each chracter has a Dodge modifier equal to their DEX modifier, up to the limit of the armor they have equipped.  When a character is hit by an attack, they may use their dodge action to add their dodge modifier to their AC against the attack after the attack roll is made. 
+
+#### Damage Reduction
+Some armors protect their wearer even when an attack hits.  When a characte with armor that provides damage reduction takes bludgeoning, piercing or slashing damage, reduce that damage by the amount of damage reduction(half-proficiency is rounded down)
+
+### Armor Types
+
+#### Light Armor
+Light armor is designed to allow for mobility while providing a bit of protection.  Light armor has the highest Dodge limits of any type of armor, allowing high DEX characters to dodge attacks while still providing some protection.  It takes up less slots than heavier armors, allowing characters with less Strength to equip them without worrying about encumbrance.  Finally, light armors are cheaper than other armor types, allowing them to be repaired more easily.  Because of their low base AC and lack of damage reduction, light armors are weak when taking many attacks in one turn.
+
+#### Medium Armor
+Medium armors strike a balance between mobility and protection.  They often provide enough protection to grant their wearers a bit of damage reduction, while still granting enough mobility for a dodge.  Medium armor provides decent AC, while being light enough to make sure players are not too encumbered. 
+
+\pagebreak
+
+#### Heavy Armor
+Heavy armor gives up mobility to provide the ultimate protection for the wearer.  Heavy armor boasts the highest AC of any armor type, but does not allow the wearer to dodge at all.  It is best suited for high STR characters who can equip the armor without becoming too encumbered.  Heavy armor also provides the highest damage reduction of any armor type, making it best suited for fighting multiple enemies at once.
+
+##### Armor List
+
+|Armor | Type | AC | Dodge Limit | Damage Reduction | Cost | Slots |
+|---|---|---|---|---|---|---|
+| Padded | Light | 11 | None | None | 5 gp | 2 |
+| Leather | Light | 12 | None | None | 10 gp | 3 |
+| Hardened Leather | Light | 12 | None | Half-Proficiency | 30 gp | 4 |
+| Studded Leather | Light | 13 | +5 | None | 45 gp | 4 |
+| Plated Leather* | Light | 14 | +4 | Half-Proficiency | 400 gp | 6 |
+| Hide | Medium | 12 | +2 | None | 10 gp | 4 |
+| Chain Shirt | Medium | 13 | +2 | Half-Proficiency | 50 gp | 6 |
+| Chain Vest | Medium | 12 | +3 | Half-Proficiency | 30 gp | 4 |
+| Scale Mail* | Medium | 14 | +2 | Half-Proficiency | 50 gp | 8 |
+| Breastplate | Medium | 15 | +2 | Half-Proficiency | 400 gp | 6 |
+| Half Plate* | Medium | 16 | +2 | Half-Proficiency | 750 gp | 9 |
+| Segmented Plate* | Medium | 16 | +2 | Proficiency | 800 gp | 12 |
+| Ring Mail* | Heavy | 14 | +0 | Proficiency | 30 gp | 9 |
+| Full Scale* | Heavy | 15 | +2 | Proficiency | 100 gp | 12 |
+| Chain Mail* | Heavy | 16 | +0 | Proficiency | 75 gp | 11 |
+| Doubled Chain* | Heavy | 18 | +0 | Proficiency | 150 gp | 22 |
+| Splint Mail* | Heavy | 17 | +0 | Proficiency | 200 gp | 12 |
+| Padded Splint | Heavy | 17 | +0 | Proficiency | 250 gp | 15 |
+| Full Plate* | Heavy | 18 | +0 | Proficiency | 1500 gp | 15 |
+| Heavy Plate* | Heavy | 20 | +0 | Proficiency | 3000 gp | 25 |
+
+\* Disadvantage on stealth checks
+
+\columnbreak
+
+### Shields
+There is more than one kind of shield.  Different shields can be used for different purposes.
+
+##### Shield Types
+| Shield | AC | Don/Doff | Abilities Gained | Slot Cost |
+|---|---|---|---|---|
+| Buckler | +0 | Bonus Action | Parry and Riposte | 2 |
+| Round Shield | +0 | Bonus Action | Deflect | 2 |
+| Shield | +2 | 1 Action | None | 3|
+| Tower Shield | +3 | 1 Action | Shield Defense | 5 |
+
+**Parry and Riposte.**  As a reaction, when your character is attacked, you may add your Dodge modifier to your AC.  If your AC is greater than the attack roll by 6 or more you make make an attack of opportunity against the attacker.  You may not use your dodge action on this attack.
+
+**Deflect.** Add +3 to your Dodge modifier. Your Dodge modifier cannot be higher than your armor's Dodge Limit.
+
+**Shield Defense**  As a reaction, if you aren't incapacitated, you can add your shield's AC bonus to any Dexterity saving throw you make against a spell or other harmful effect that targets you, and you do not gain disadvantage on this check from encumbrance.
+
+## Equipment and Rule Changes
+
+### Light
+Light rules are complicated.  Tracking light sources, where light is dim, and how that affects you character is difficult.  These rule simplifications will make some parts of the light rules easier.
+
+#### Darkvision
+For player characters, darkvision is no longer perfect.  It becomes the following ability.
+
+**Darkvision.**  You can see up to 10 ft away in darkness, and get no penalties to Perception in dim light.
+
+#### Light Cantrip
+The *Light* cantrip requires concentration.
+
+#### Torches and Lanterns
+Now that darkvision and the light cantrip are weaker, other light sources become more important.
+
+**Torch.** A torch burns for 1 hour, providing bright light in a 20 foot radius, and dim light in a 40 foot radius, as long as it is being held, or in a scone or wall hanging.  If the torch is left on the ground, it provides bright light in a 5 foot radius, and dim light in a 10 foot radius.  
+ 
+**Lamp.** A lamp casts bright light in a 15 foot radius and dim light in a 30 foot radius. Once lit, it burns for 6 hours on a flask (1 pint) of oil.  A lamp can be attached to a character’s belt while still lit as an action, allowing a character to use both hands while it is still lit, but if the lamp is struck while lit, it will cover the character in oil and deal fire damage to them.
+
+\pagebreak
+
+
+**Lantern, Hooded.** A hooded lantern casts bright light in a 30 foot radius and dim light in a 60 foot radius.  Once lit, it burns for 60 hours on a flask of oil.  As an action, you can lower the hood, reducing the light to dim light in a 5 foot radius.  Also as an action, you may attach the hooded lantern to a belt while still lit, allowing a character to use both hands while it is still lit, but if the lantern is struck while lit, it will cover the character in oil and deal fire damage to them.
+
+**Lantern, Bullseye.** A bullseye lantern casts bright light in a 60 foot cone and dim light in a 120 foot cone.  Once lit, it burns for 6 hours on a flask of oil.  As an action, you may attach the hooded lantern to a belt while still lit, allowing a character to use both hands while it is still lit, but if the lantern is struck while lit, it will cover the character in oil and deal fire damage to them.
+
+**Candle.** For 1 hour, a candle sheds bright light in a 5 foot radius and dim light in a 10 foot radius.
+
+### Healing
+Healer's Kits are normally used to stabilize downed creatures during combat, but they can be used outside of combat to bind wounds.  Any characters with a Healer's Kit and proficiency in Medicine gain the Healer ability.
+
+**Healer.** You can spend 5 minutes and 1 chrge of you healer's kit to bind a creature's wounds.  That creature may spend 1 hit die as if they short rested.  Once a creature has gained hi points in this way, thy cannot be healed by this ability again until they have finished a short rest.
+
+### Rations and Resting
+When an adventurer rests, they must eat rations in order to gain the effects of the rest.  Different rations will have different effects on an adventurer during the rest.  You can fit 5 rations into one slot, and different rations can be mixed and matched into one slot.
+
+#### Cold Rations
+Cold rations require little to no preparation to consume and typically include jerky, biscuits, dried fruit, nuts and berries.  These rations are cheap and easily produced and stored, but they provide the least benefits.  A character can eat cold rations in 30 minutes.
+
+#### Hot Rations
+Hot rations require utensils and time to prepare.  They typically include vegetables, salted meats, breads, spices and gravies, which can be combined into sandwiches, stews, or other prepared meals.  They grant small bonuses during rests, but require a cooking fire to prepare.  Hot rations also require a mess kit. (PHB pg. 150, 152).  Hot rations take 30 minutes to prepare and 30 minutes to eat.
+
+#### Fine Rations
+Fine rations take a long time to prepare and require specialized equipment.  They include fine cheeses and breads, fresh raw meats, expensive fruits and vegetables, and exotic spices and sauces.  These rations are the most expensive and spoil very quickly if not properly kept.  However, they provide incredibly powerful bonuses.  Someone with proficiency in cook's utensils must spend 2 hours preparing these rations, and they take 30 minutes to eat. 
+
+|Rations|Short Rest|Long Rest|
+|---|---|---|
+|Cold Rations| Characters cannot use more than half of their hit dice, rounded down, during this rest.| Characters only regain hit points equal to half their hit point total, rounded down, and regain half of their hit dice.  If characters do not reach full health they may spend hit dice as they could during a short rest after they regain their hit dice.|
+|Hot Rations| Characters can use hit dice normally, and upon finishing the meal, characters regain half their hit dice.|Characters regain all of their hit points and all of their hit dice.|
+|Fine Rations| Characters regain all of their hit dice, and recover one level of exhaustion.  Some classes also gain other bonuses. | Characters regain all of their hit points and all of their hit dice.  All characters eating the meal gain temporary hit points equal to the Cook's Level + WIS modifier + proficiency bonus.  These temporary hit points expire after 24 hours.  Recover two levels of exhaustion instead of one.|
+
+\pagebreak
+
+|Class| Recovery|
+|---|---|
+|Barbarian| Replenish a number of rages equal to your proficiency bonus. |
+|Bard| Regain Bardic Inspirations equal to your proficiency bonus|
+|Cleric| Regain a number of spell slots with levels equal to half your cleric level|
+|Druid| Regain one use of Wild Shape|
+|Fighter| *Battlemaster*: Recover a number of superiority dice equal to your proficiency bonus |
+|Monk| Regain ki points equal to your proficiency bonus|
+|Paladin| Restore hit points in your Lay On Hands pool equal to 2 times your Paladin level|
+|Ranger| Restore spells slots with levels equal to your proficieny bonus|
+|Rogue| *Arcane Trickster*: Recover spell slots equal to your proficency bonus|
+|Sorcerer| Recover spell slots equal to half your Sorcerer level|
+|Warlock| You gain one temporary spell slot that must be used before any of your other spell slots.  It expires at the start of your next short or long rest|
+|Wizard| Recover spell slots equal to half your Wizard level|
+
+
+|Rations| Cost | Spoil |
+|---|---|---|
+|Cold Rations| 5 cp | 30 days |
+|Hot Rations| 5 sp | 10 days |
+|Fine Rations| 5 gp | 2 days |
+
+#### Foraging
+All players gain the Forager ability, allowing they to search for food.  
+
+**Forager.**  During a long rest, spend 2 hours hunting or foraging.  Make a Survival ability check.  At the end of the two hours, gain cold rations equal to you check / 5 (rounded down).  You can also make this check while not resting, but you may not travel while foraging.  Poor terrain may cause you to roll at disadvantage or be unable to use this skill.  Rangers in their favored terrain may make two checks and add their totals together.
+
+#### Exhaustion
+The morning after a long rest, each character recovers one level of exhaustion.
+
+\columnbreak
+
+.
+
+### Resting Conditions
+
+While taking a long rest in the wild inclement weather or other conditions could prevent your character from resting properly.  If these problems are not addressed your character has a chance of taking a level of exhaustion after the long rest.  Different conditions will add modifiers to the DC of a CON check you must make in order to not take a level of exhaustion.
+
+
+|Inclement Condition | Description | Preventative Equipment / Measure | DC mod |
+|---|---|---|---|
+|Cold| In some regions, when the sun sets the cold gets bad enough to keep adventurers from sleeping soundly.| Bedroll / Campfire | +10 |
+|Precipitation| Rain and snow will sap an adventurer's strength and exhaust them.| Tent / Cave | +10|
+|Rough Terrain| No good location to lie may cause discomfort and insomnia.| Bedroll / Camp in an open clearing| +5 |
+|Disturbance| Sleep can be interrupted by surprises and combat. | None / Don't get caught! | +5 |
+
+When a long rest is finished, if any inclement conditions harried your rest, add up th modifiers of all conditions that you did not prevent and make a CON save against that DC.  On a failure, take a level of exhaustion.
+
+If you really don't want to take that level of exhaustion, for each 2 hours that you extend your long rest, reduce the DC of the CON save by 5.
+
+**Campfire.** Campfires are useful for staying warm during the night and cooking hot rations, but smoke from a campfire will alert any creatures in the area to your presence, making nighttime encounters more likely.
+
+**Camp Location.** Making camp in a cave or den will keep your characters more hidden from view, but force your character to sleep on rough terrain.  Making camp in an open area or clearing will make nighttime encounters more likely.
+
+#### Order of Rests
+It is possible for short or long rests to be interrupted by combat or other threats.  Benefits of a rest may not be acquired if it is interrupted.  For short rests, characters recover when they finish eating.  For long rests, characters recover at the end of the 8 hour period as long as they have slept some and eaten.  The CON save against exhaustion occurs immediately after the character recovers.
+
+\pagebreak
+
+### Weights of Weapons
+
+|Name|Damage|Cost|Size|
+|---|---|---|---|
+|Battleaxe      | 1d8 slashing    | 10gp  | 3|
+|Blowgun        | 1 piercing      | 10 gp | 1|
+|Club           | 1d4 bludgeoning | 1 sp  | 2|
+|Crossbow, Hand | 1d6 piercing    | 75 gp | 1|
+|Crossbow, Light| 1d8 piercing    | 25 gp | 2|
+|Crossbow, Heavy| 1d10 piercing   | 50 gp | 3|
+|Dagger         | 1d4 piercing    | 2 gp  | 1|
+|Dart           | 1d4 piercing    | 5 cp  | T|
+|Flail          | 1d8 bludgeoning | 10 gp | 2|
+|Glaive         | 1d10 slashing   | 20 gp | 3|
+|Greataxe       | 1d12 slashing   | 30 gp | 3|
+|Greatclub      | 1d8 bludgeoning | 2 sp  | 3|
+|Greatsword     | 2d6 slashing    | 50 gp | 3|
+|Halberd        | 1d10 slashing   | 20 gp | 3|
+|Handaxe        | 1d6 slashing    | 5 gp  | 2|
+|Javelin(5)     | 1d6 piercing    | 5 sp  | 3|
+|Lance          | 1d12 piercing   | 10 gp | 3|
+|Light Hammer   | 1d4 bludgeoning | 2 gp  | 1|
+|Longbow        | 1d8 piercing    | 50 gp | 3|
+|Longsword      | 1d8 slashing    | 15 gp | 3|
+|Mace           | 1d6 bludgeoning | 5 gp  | 2|
+|Maul           | 2d6 bludgeoning | 10 gp | 3|
+|Morningstar    | 1d8 piercing    | 15 gp | 2|
+|Net            | -               | 1 gp  | 1|
+|Pike           | 1d10 piercing   | 5 gp  | 3|
+|Quarterstaff   | 1d6 bludgeoning | 2 sp  | 3|
+|Rapier         | 1d8 piercing    | 25 gp | 2|
+|Scimitar       | 1d6 slashing    | 25 gp | 2|
+|Shortbow       | 1d6 piercing    | 25 gp | 2|
+|Shortsword     | 1d6 piercing    | 10 gp | 2|
+|Sickle         | 1d4 slashing    | 1 gp  | 1|
+|Sling          | 1d4 bludgeoning | 1 sp  | 1|
+|Spear          | 1d6 piercing    | 1 gp  | 3|
+|Trident        | 1d6 piercing    | 5 gp  | 3|
+|War Pick       | 1d8 piercing    | 5 gp  | 2|
+|Warhammer      | 1d8 bludgeoning | 15 gp | 3|
+|Whip           | 1d4 slashing    | 2 gp  | 1|
+
+\columnbreak
+
+
+|Name | Cost | Size |
+|---|---|---|
+|Abacus | 2 gp | 1|
+|Acid (vial) | 25 gp | T|
+|Alchemist's Fire (flask) | 50 gp | 1|
+|Ammo, Arrows (20) | 1 gp | 1|
+|Ammo, Bolts (20) | 1 gp | 1|
+|Ammo, Needles (50) | 1 gp | 1|
+|Anitoxin (vial) | 50 gp | T|
+|Arcane Focus, Crystal| 10 gp | 1|
+|Arcane Focus, Orb | 20 gp | 1|
+|Arcane Focus, Rod | 10 gp | 1|
+|Arcane Focus, Staff | 5 gp | 3|
+|Arcane Focus, Wand | 10 gp | 1|
+|Ball Bearings (1000) | 1 gp | 1|
+|Barrel* | 2 gp | 9|
+|Bedroll | 1 gp | 2|
+|Bell | 1 gp | 1|
+|Blanket | 5 sp | 1|
+|Block & Tackle | 1 gp | 1|
+|Book | 25 gp | 1|
+|Bottle, Glass | 2 gp | 1|
+|Bucket | 5 cp | 2|
+|Caltrops | 1 gp | 1|
+|Candle | 1 cp | T|
+|Case* | 1 gp | 1|
+|Chain (10 ft) | 5 gp | 1|
+|Chalk (1 piece) | 1 cp | T|
+|Chest* | 5 gp | 6|
+|Clothes, Common | 5 sp | 1|
+|Clothes, Costume | 5 gp | 2|
+|Clothes, Fine | 15 gp | 2|
+|Clothes, Traveler's | 2 gp | 1|
+|Component Pouch | 25 gp | 1|
+|Crowbar | 2 gp | 2|
+|Druidic Focus, Mistletoe | 1 gp | 1|
+|Druidic Focus, Staff | 5 gp | 3|
+|Druidic Focus, Totem | 1 gp | 1|
+|Druidic Focus, Wand  | 10 gp | 1|
+|Fishing Tackle | 1 gp | 1|
+|Flask or Tankard | 2 cp | 1|
+|Game, Cards | 5 sp | 1|
+|Game, Dice | 1 sp | 1|
+|Game, Dragonchess | 1 gp | 1|
+
+\pagebreak
+
+|Name | Cost | Size |
+|---|---|---|
+|Game, 3 Dragon Ante | 1 gp | 1|
+|Grappling Hook | 2 gp | 1|
+|Hammer | 1 gp | 1|
+|Hammer, Sledge | 2 gp | 3|
+|Holy Symbol, Amulet | 5 gp | 1|
+|Holy Symbol, Emblem | 5 gp | 1|
+|Holy Symbol, Reliquary | 5 gp | 1|
+|Holy Water (flask) | 25 gp | 1|
+|Hourglass | 25 gp | 1|
+|Hunting Trap | 5 gp | 1|
+|Ink | 10 gp | T|
+|Ink Pen | 2 cp | T|
+|Instrument, Bagpipes| 30 gp | 3|
+|Instrument, Drum | 6 gp | 2|
+|Instrument, Dulcimer | 25 gp | 3|
+|Instrument, Flute | 2 gp | 1|
+|Instrument, Horn | 3 gp | 2|
+|Instrument, Lute | 35 gp | 2|
+|Instrument, Lyre | 30 gp | 2|
+|Instrument, Shawm | 2 gp | 2|
+|Instrument, Viol | 30 gp | 2|
+|Jug or Pitcher | 2 cp | 1|
+|Kit, Climbers | 25 gp | 1|
+|Kit, Disguise | 25 gp | 1|
+|Kit, Forgery  | 15 gp | 1|
+|Kit, Healer's | 5 gp  | 1|
+|Kit, Mess | 2 sp | 1|
+|Kit, Poisoner's | 50 gp | 1|
+|Ladder (10 ft) | 1 sp | 3|
+|Lamp | 5 sp | 1|
+|Lantern, Bullseye | 10 gp | 1|
+|Lantern, Hooded   | 5 gp | 1|
+|Lock | 10 gp | 1|
+|Magnifying Glass | 100 gp | 1|
+|Manacles | 2 gp | 1|
+|Mirror, Steel | 5 gp | 1|
+|Oil (flask) | 1 sp | 1|
+|Paper (1 sheet) | 2 sp | T|
+|Parchment (1 sheet) | 1 sp | T|
+|Perfume (vial) | 5 gp | T|
+|Pick, Miner's | 2 gp | 3|
+|Piton | 5 cp | 1|
+
+|Name | Cost | Size |
+|---|---|---|
+|Poison, Basic (vial)| 100 gp | T|
+|Pole (10 ft) | 5 cp| 3|
+|Pot, Iron | 2 gp | 1|
+|Potion of Healing | 50 gp | 1|
+|Ram, Portable | 4 gp | 6|
+|Rations (1) | 1 sp | T|
+|Rope, Hempen (50 ft) | 1 gp | 1|
+|Rope, Silk (50 ft) | 10 gp | 1|
+|Scale, Merchant's | 5 gp | 1|
+|Sealing Wax | 5 sp | T|
+|Shovel | 2 gp | 3|
+|Signal Whistle | 5 cp | T|
+|Signet Ring | 5 gp | T|
+|Soap | 2 cp | T|
+|Spellbook | 50 gp | 1|
+|Spikes, Iron (10) | 1 gp | 1|
+|Spyglass | 1000 gp | 1|
+|Tent, Two-person | 2 gp | 3|
+|Tinderbox | 5 sp | 1|
+|Tools, Alchemist | 50 gp | 2|
+|Tools, Brewer | 20 gp | 2|
+|Tools, Calligrapher | 10 gp | 1|
+|Tools, Carpenter | 8 gp | 1|
+|Tools, Cartographer | 15 gp | 1|
+|Tools, Cobbler | 5 gp | 1|
+|Tools, Cook | 1 gp | 2|
+|Tools, Glassblower | 30 gp | 2|
+|Tools, Jeweler | 25 gp | 1|
+|Tools, Leatherworker | 5 gp | 2|
+|Tools, Mason | 10 gp | 2|
+|Tools, Navigator | 25 gp | 1|
+|Tools, Painter | 10 gp | 2|
+|Tools, Potter | 10 gp | 2|
+|Tools, Smith | 20 gp | 2|
+|Tools, Thieves | 25 gp | 1|
+|Tools, Tinker | 50 gp | 1|
+|Tools, Weaver | 1 gp | 2|
+|Tools, Woodcarver | 1 gp | 1|
+|Torch | 1 cp | 1|
+|Vial | 1 gp | T|
+|Waterskin | 2 sp | 1|
+|Whetstone | 1 cp | 1|
+
+\pagebreak
+
+
+## Bonus Experience
+
+Players can earn bonus experience that they can spend on their characters.
+
+### Character Sheet
+
+First, a player can turn in their updated character sheet before the start of each session.  Players may turn in the character sheet through Discord, or they may bring an extra copy of their character sheet to the session.  Characters sheets must be completely updated with a character's abilities, items, spells, and other pertinent information.  If a DM feels that the sheet is not properly updated, the bonus experience will be forfeit.
+
+**Prepared.** A player gets 500 bonus experience for giving a copy of their character sheet to the DMs before the start of their session.
+
+### Player Roles
+
+Players can also earn bonus experience for things they do during the session.  While there are many things that the DM must do during the session, many of these tasks can be accomplished by the players, allowing the game to progress more quickly.  Players will be rewarded with bonus experience and special abilities for taking on the roles below.
+
+##### Accountant
+The Accountant is tasked with tracking each character's inventory and treasure.  They must ensure each character's inventory does not exceed their carrying capacity, and track the wealth they possess.  The Accountant will also track the value of valuable treasures that are found during the session.  In add
+
+The player who takes on the Accountant role must have a strong knowledge of the new equipment rules and must be focused on the game throughout the session to keep proper track of each character's inventory.
+
+**Great Appraisal.** The Accountant has a better idea of what treasures and other objects are worth, and so can make better deals wen buying or selling equipment and treasures.
+
+
+##### Tactician
+The Tactician is tasked with tracking many things during combat, including damage dealt to enemies, enemy reactions and dodge actions, enemy conditions, tactical cover, and lighting conditions.  
+
+The player who takes on the Tactician role must be well versed in combat rules regarding light, cover, and conditions, and must be able to track the damage dealt to enemies.
+
+**Size-up.** Once per session, as an action, the Tactician can identify the exact amount of hitpoints an enemy has.
+
+##### Itinerant
+The Itinerant tracks the date and time, how far the group can travel, and how many rations each character has.  They also track exhaustion and other long-lasting conditions on characters.
+
+The player who takes on the Itinerant role must understand resting and adventuring rules, both old and new, and be able to track time.
+
