@@ -1,0 +1,154 @@
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6&compress=zlib-stream
+INFO:discord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:discord.gateway:Shard ID None has connected to Gateway: ["gateway-prd-main-fn5f",{"micros":30973,"calls":["discord-sessions-prd-1-22",{"micros":25831,"calls":["start_session",{"micros":19310,"calls":["api-prd-main-9l7f",{"micros":15858,"calls":["get_user",{"micros":2060},"add_authorized_ip",{"micros":1197},"get_guilds",{"micros":1564},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":1,"calls":[]}]}]}] (Session ID: 1788d98294fb292477b896d4726a29f1).
+INFO:root:Logging in as:test-4-bot : 620850260641579018
+INFO:discord.client:Received signal to terminate bot and event loop.
+INFO:discord.client:Cleaning up tasks.
+INFO:discord.client:Cleaning up after 4 tasks.
+INFO:discord.client:All tasks finished cancelling.
+INFO:discord.client:Closing the event loop.
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6&compress=zlib-stream
+INFO:discord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:discord.gateway:Shard ID None has connected to Gateway: ["gateway-prd-main-phpv",{"micros":488743,"calls":["discord-sessions-prd-1-26",{"micros":473858,"calls":["start_session",{"micros":31079,"calls":["api-prd-main-n8dl",{"micros":26839,"calls":["get_user",{"micros":2599},"add_authorized_ip",{"micros":6},"get_guilds",{"micros":5256},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":1,"calls":[]}]}]}] (Session ID: 96a09c7e8c38094f29558b86ce26361d).
+INFO:root:Logging in as:test-4-bot : 620850260641579018
+INFO:discord.client:Received signal to terminate bot and event loop.
+INFO:discord.client:Cleaning up tasks.
+INFO:discord.client:Cleaning up after 4 tasks.
+INFO:discord.client:All tasks finished cancelling.
+INFO:discord.client:Closing the event loop.
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6&compress=zlib-stream
+INFO:discord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:discord.gateway:Shard ID None has connected to Gateway: ["gateway-prd-main-q724",{"micros":42091,"calls":["discord-sessions-prd-1-13",{"micros":39545,"calls":["start_session",{"micros":37266,"calls":["api-prd-main-mtcm",{"micros":33614,"calls":["get_user",{"micros":1665},"add_authorized_ip",{"micros":4},"get_guilds",{"micros":2744},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":986,"calls":[]}]}]}] (Session ID: e8033575ffa11fb327d957580941dd58).
+INFO:root:Logging in as:test-4-bot : 620850260641579018
+INFO:discord.client:Received signal to terminate bot and event loop.
+INFO:discord.client:Cleaning up tasks.
+INFO:discord.client:Cleaning up after 4 tasks.
+INFO:discord.client:All tasks finished cancelling.
+INFO:discord.client:Closing the event loop.
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6&compress=zlib-stream
+INFO:discord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:discord.gateway:Shard ID None has connected to Gateway: ["gateway-prd-main-g38h",{"micros":25452,"calls":["discord-sessions-prd-1-28",{"micros":22509,"calls":["start_session",{"micros":19619,"calls":["api-prd-main-b60n",{"micros":16547,"calls":["get_user",{"micros":2099},"add_authorized_ip",{"micros":5},"get_guilds",{"micros":1781},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":1,"calls":[]}]}]}] (Session ID: 6b84a592de7eddfc4f00c9f2d5d0b2ba).
+INFO:root:Logging in as:test-4-bot : 620850260641579018
+WARNING:googleapiclient.discovery_cache:file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+Traceback (most recent call last):
+  File "C:\Users\Tommy\AppData\Local\Programs\Python\Python37\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 36, in autodetect
+    from google.appengine.api import memcache
+ModuleNotFoundError: No module named 'google.appengine'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Tommy\AppData\Local\Programs\Python\Python37\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 33, in <module>
+    from oauth2client.contrib.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Tommy\AppData\Local\Programs\Python\Python37\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 37, in <module>
+    from oauth2client.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Tommy\AppData\Local\Programs\Python\Python37\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "C:\Users\Tommy\AppData\Local\Programs\Python\Python37\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 41, in <module>
+    'file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth')
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+INFO:googleapiclient.discovery:URL being requested: GET https://www.googleapis.com/discovery/v1/apis/sheets/v4/rest
+INFO:discord.client:Received signal to terminate bot and event loop.
+INFO:discord.client:Cleaning up tasks.
+INFO:discord.client:Cleaning up after 4 tasks.
+WARNING:discord.gateway:Heartbeat blocked for more than 5 seconds.
+WARNING:discord.gateway:Heartbeat blocked for more than 10 seconds.
+INFO:discord.client:All tasks finished cancelling.
+INFO:discord.client:Closing the event loop.
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6&compress=zlib-stream
+INFO:discord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:discord.gateway:Shard ID None has connected to Gateway: ["gateway-prd-main-q4mx",{"micros":78820,"calls":["discord-sessions-prd-1-14",{"micros":77819,"calls":["start_session",{"micros":17789,"calls":["api-prd-main-xc75",{"micros":14699,"calls":["get_user",{"micros":1659},"add_authorized_ip",{"micros":4},"get_guilds",{"micros":1506},"coros_wait",{"micros":0}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":835,"calls":[]}]}]}] (Session ID: 6ad76a8cbf7a94b48510984e4561821c).
+INFO:root:Logging in as:test-4-bot : 620850260641579018
+WARNING:googleapiclient.discovery_cache:file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+Traceback (most recent call last):
+  File "C:\Users\Tommy\AppData\Local\Programs\Python\Python37\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 36, in autodetect
+    from google.appengine.api import memcache
+ModuleNotFoundError: No module named 'google.appengine'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Tommy\AppData\Local\Programs\Python\Python37\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 33, in <module>
+    from oauth2client.contrib.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Tommy\AppData\Local\Programs\Python\Python37\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 37, in <module>
+    from oauth2client.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Tommy\AppData\Local\Programs\Python\Python37\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "C:\Users\Tommy\AppData\Local\Programs\Python\Python37\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 41, in <module>
+    'file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth')
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+INFO:googleapiclient.discovery:URL being requested: GET https://www.googleapis.com/discovery/v1/apis/sheets/v4/rest
+INFO:root:Received |hi| command from |Tsalanski|
+INFO:root:Received |roll| command from |Tsalanski|
+WARNING:discord.gateway:Can't keep up, websocket is 10.7s behind.
+INFO:discord.client:Received signal to terminate bot and event loop.
+INFO:discord.client:Cleaning up tasks.
+INFO:discord.client:Cleaning up after 4 tasks.
+INFO:discord.client:All tasks finished cancelling.
+INFO:discord.client:Closing the event loop.
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6&compress=zlib-stream
+INFO:discord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:discord.gateway:Shard ID None has connected to Gateway: ["gateway-prd-main-767z",{"micros":23483,"calls":["discord-sessions-prd-1-24",{"micros":20441,"calls":["start_session",{"micros":18100,"calls":["api-prd-main-snd9",{"micros":15192,"calls":["get_user",{"micros":1909},"add_authorized_ip",{"micros":5},"get_guilds",{"micros":1437},"coros_wait",{"micros":0}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":1,"calls":[]}]}]}] (Session ID: 1c4b67c166e7d7570e2af6c8d1b3b7c6).
+INFO:root:Logging in as:test-4-bot : 620850260641579018
+WARNING:googleapiclient.discovery_cache:file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+Traceback (most recent call last):
+  File "C:\Users\Tommy\AppData\Local\Programs\Python\Python37\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 36, in autodetect
+    from google.appengine.api import memcache
+ModuleNotFoundError: No module named 'google.appengine'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Tommy\AppData\Local\Programs\Python\Python37\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 33, in <module>
+    from oauth2client.contrib.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Tommy\AppData\Local\Programs\Python\Python37\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 37, in <module>
+    from oauth2client.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Tommy\AppData\Local\Programs\Python\Python37\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "C:\Users\Tommy\AppData\Local\Programs\Python\Python37\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 41, in <module>
+    'file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth')
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+INFO:googleapiclient.discovery:URL being requested: GET https://www.googleapis.com/discovery/v1/apis/sheets/v4/rest
+INFO:discord.client:Received signal to terminate bot and event loop.
+INFO:discord.client:Cleaning up tasks.
+INFO:discord.client:Cleaning up after 4 tasks.
+WARNING:discord.gateway:Heartbeat blocked for more than 5 seconds.
+WARNING:discord.gateway:Heartbeat blocked for more than 10 seconds.
+INFO:discord.client:All tasks finished cancelling.
+INFO:discord.client:Closing the event loop.

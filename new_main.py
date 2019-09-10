@@ -14,7 +14,7 @@ import os, sys, getopt
 
 ## Magic Variables
 COMMAND_PREFIX = '!'
-DISCORD_TOKEN  = 'NTYyNDczNjY4MzYyNTAyMTc2.XKLSrQ.GEx6BUwS5Zch6ibN3AlSqvJUqno'
+DISCORD_TOKEN  = 'NjIwODUwMjYwNjQxNTc5MDE4.XXcyFg.V2rdtPcAKnQhRvLacmvtKxlCXMo'
 DISCORD_TOKEN_PARTY  = 'NDM4Mjg4NjYxMzk4NjgzNjUw.DcCb5A.gyiEoXkZyEnnByhjOXshRriRHXY'
 
 LOG_LEVEL    = logging.INFO

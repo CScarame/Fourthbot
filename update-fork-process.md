@@ -8,7 +8,7 @@ You only have to do this once to check it use ` git remote -v`
 
 Then...
 ```
-git fetch upstream/master
+git fetch upstream
 git checkout master
 git merge upstream/master
 ```
