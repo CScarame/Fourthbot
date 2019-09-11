@@ -1,23 +1,23 @@
-# Equipment Overhauled v 0.2
+# Equipment Overhauled v 0.3
 
 
 Greetings, comrade!  Dungeons and Dragons 5th Edition is a well thought out tabletop system that simplifies and streamlines gameplay and combat.  However, calculating how much weight a character is carrying is difficult to track, and characters being able to carry up to their carrying capacity with little to no downsides is a immersion breaking idea.  This ruleset can be added to the existing 5e system in order to make equipment more immersive and give players more interesting choices when deciding how to equip themselves for combat.
 
-## Item Slots
+# Item Slots
 
 Character inventory will now be managed using item slots instead of weight.  The slots an item occupies is an abstraction of its weight, size, and wieldyness. The storage capacity of bags, belts, sheathes, and your character's ability to carry that equipment are measured in slots.  The more item slots a character has avaliable, the more they can carry.  
 
-### Carrying Capacity
+## Carrying Capacity
 
 Stronger characters are able to carry more without adverse effects while more hardy characters are able to better withstand being overloaded.  A character's base carrying capacity is a number of slots equal to their Strength ability score.  However, your character can choose to take on levels of encumbrance in order to increase their carrying capacity based on the table below.
 
 **Carry Capacity.**  A character's carrying capacity is equal to their Strength score.
 
-### Encumbrance
+## Encumbrance
 
 A player holding more items than their carrying capacity will take on levels of encumbrance.  The following table describes how many extra slots a character can carry and how many levels of encumbrance they will take on based on their CON modifier.
 
-##### Extra Slots per Encumbrance Level
+#### Extra Slots per Encumbrance Level
 
 | CON modifier |1   |2   |3   |4   |5   |6   |7   |8   |9   |10  |
 |:-------------|:---|:---|:---|:---|:---|:---|:---|:---|:---|:---|
@@ -34,7 +34,7 @@ A player holding more items than their carrying capacity will take on levels of 
 
 Each encumbrance levels adds an additional negative effect during combat.  These effects stack until your character can no longer move.
 
-##### Combat Encumbrance
+#### Combat Encumbrance
 
 |Encumbrance Levels|Adverse Effects|
 |---|---|
@@ -48,17 +48,17 @@ Each encumbrance levels adds an additional negative effect during combat.  These
 |8| Disadvantage on all rolls|
 |9+| -5 speed(stacks until speed is 0)|
 
-##### Traveling Encumbrance
+#### Traveling Encumbrance
 
 |Encumbrance Levels|Adverse Effects|
 |---|---|
-|1-2| None|
-|3-6| Traveling distance reduced by 5 miles|
-|7-10| Traveling distance cut in half.  Take one level of exhaustion after 8 hours of traveling|
-|11+| Cannot travel|
+|1-5| None|
+|6-9| Traveling distance reduced by 5 miles|
+|10-11| Traveling distance cut in half.  Take one level of exhaustion after 8 hours of traveling|
+|12+| Cannot travel|
 
 
-### Trinkets, Coins and Wallets
+## Trinkets, Coins and Wallets
 
 Rings, keys, candles and other small items are classified as trinkets.  **Trinkets** are items that are too small and light to take up an item slot.  A **wallet** is a 1 slot item that has 10 trinket-slots for trinkets.  Each mini-slot can hold 1 trinket or 20 coins.  Therefore each wallet can hold 200 coins or 10 trinkets, or some combination of the two.  Without a wallet, coins and trinkets may get lost during travel or combat.  Each player starts with a free wallet that holds their starting coins and trinkets.  A wallet can be kept on a belt or in a backpack.
 
@@ -72,26 +72,42 @@ On the item table, trikets are denoted by having a size of T(meaning trinket)
 Some items, such as rations, ammuniton, or oil flasks can fit more than one into a single item slot.  For example, up to 5 cold rations or 20 arrows can fit in a single item slot.  While you can fit up to 5 rations in a single item slot, if you only have 1 ration, it still takes up an item slot, as does a single arrow.
 
 
-### Containers
+## Containers
 Carrying capacity tells how much a character can carry, but those items must be carried in containers.  Items can be carried in backpacks, belt pouches, sheathes, hands, etc.  Different containers offer different features for a character.
 
+|Container|Size| Slots|
+|---|---|---|
+|Backpack|0|9 |
+|Belt    |0|3 |
+|Quiver  |0|1*|
+|Sheath  |0|4 |
+|Sack    |0|15|
+|Chest   |3|25|
+|Trunk   |6|35|
+|Barrel  |9|45|
+
+*Quiver can hold 1 slot of ammo and any sized ranged weapon
+
+
 #### Backpack
-The most popular container for essential items while traveling, the backpack, or knapsack, is versatile and has lots of space that the character can use.  A regularly sized backpack has space for 9 slots inside, and a bedroll and 50 ft of rope can be strapped to the top and sides.  However, the backpack isn't designed to be used during combat.  Grabbing an item out of the backpack during combat takes 1 action.  A backpack can be taken off and dropped as a free action, allowing characters to quickly prepare for combat.
+The most popular container for essential items while traveling, the backpack can be carried on the back without any negative repercussions.  Grabbing an item out of the backpack takes 1 action.  The backpack can be shrugged off and dropped as a free action.
+
+For flying characters, backpacks prevent flying
 
 #### Belt
-A belt has space for 3 items and can only hold items that take 1 slot, such as potions, daggers, wallets or lanterns.  Any items in te belt can be accessed as a free action, since your character can quickly grab things out of their belt pouches, including any items in a wallet that are in the belt.  Belts are useful for small items that a character may want to use during combat such as a backup weapon, a spell focus, a potion, or a lantern.
+The belt is useful for carrying important items that must be accessed quickly.  Only items that are 1 slot or smaller can fit in the belt.  Items in/on the belt can be grabbed as a free action.
 
 #### Quiver
-A quiver can hold 1 slots worth of ammunition and one ranged weapon.  Ammo can be grabbed from the quiver as part of the Attack action.  Pulling a ranged weapon off of a quiver costs a bonus action.
+Ammo can be grabbed from the quiver as part of the Attack action.  Pulling a ranged weapon off of a quiver costs a bonus action.
 
 #### Sheath
-A sheath is able to carry a melee weapons weighing up to 4 slots.  These weapons can be drawn using a bonus action.  The term sheath can refer to an actual leather sheath or scabbard, or a belt loop or strap that can hold the weapon.
+Weapons can be stored in the quiver and drawn using a bonus action.  The term sheath can refer to an actual leather sheath or scabbard, or a belt loop or strap that can hold the weapon.
 
 #### Sack
 Sometimes a backpack is not big enough to hold everything your character wants to carry.  A sack is a large bag that requires at least one hand to hold, but can typically hold up to 15 slots.  If a character is caught in combat while holding a sack, they may either drop the bag as a free action and risk damaging the items inside, or they may spend an action setting down the bag carefully. Retrieving an item from or stowing and item in the sack takes an action.
 
-#### Trunk
-A trunk is a large container that requires two hands to hold.  It can carry up to 35 slots, and can be set down as an action. Retrieving an item from or stowing and item in the trunk takes an action.
+#### Chest,Barrel,Trunk
+Containers larger than a sack start begin to have weight themselves.  These containers' maximum slots include their own weight (so a chest can carry 22 slots, and will weigh 25 slots etc.).  These containers always require two hands to hold.  If two characters carry a large container jointly, both of them need two hands to hold the container.
 
 #### Saddlebags
 A variant bag that can only be carried by beasts of burden.  Saddlebags can carry up to 20 item slots.  Beasts of burden with a higher carrying capacity can only carry more by using a cart or wagon of some sort. Retrieving an item from or stowing and item in the saddlebags takes an action.
@@ -128,22 +144,115 @@ spend the day grazing.
 
 -----
 
-## Armor Changes
+# Weapon Changes
+Any changes to weapons can be found here.
+## Weight
+All weapons now take up a number of slots as stated below.  Some weapons can stack multiples together into the same slot(s).
+
+|Name|Damage|Cost|Size|Stack Size|
+|---|---|---|---|---|
+|Battleaxe      | 1d8 slashing    | 10gp  | 2| 1|
+|Blowgun        | 1 piercing      | 10 gp | 1| 1|
+|Club           | 1d4 bludgeoning | 1 sp  | 2| 1|
+|Crossbow, Hand | 1d6 piercing    | 75 gp | 1| 1|
+|Crossbow, Light| 1d8 piercing    | 25 gp | 2| 1|
+|Crossbow, Heavy| 1d10 piercing   | 50 gp | 3| 1|
+|Dagger         | 1d4 piercing    | 2 gp  | 1| 3|
+|Dart           | 1d4 piercing    | 5 cp  | T| 1|
+|Flail          | 1d8 bludgeoning | 10 gp | 2| 1|
+|Glaive         | 1d10 slashing   | 20 gp | 3| 1|
+|Greataxe       | 1d12 slashing   | 30 gp | 3| 1|
+|Greatclub      | 1d8 bludgeoning | 2 sp  | 3| 1|
+|Greatsword     | 2d6 slashing    | 50 gp | 3| 1|
+|Halberd        | 1d10 slashing   | 20 gp | 3| 1|
+|Handaxe        | 1d6 slashing    | 5 gp  | 1| 1|
+|Javelin        | 1d6 piercing    | 1 sp  | 3| 5|
+|Lance          | 1d12 piercing   | 10 gp | 3| 1|
+|Light Hammer   | 1d4 bludgeoning | 2 gp  | 1| 1|
+|Longbow        | 1d8 piercing    | 50 gp | 3| 1|
+|Longsword      | 1d8 slashing    | 15 gp | 3| 1|
+|Mace           | 1d6 bludgeoning | 5 gp  | 2| 1|
+|Maul           | 2d6 bludgeoning | 10 gp | 3| 1|
+|Morningstar    | 1d8 piercing    | 15 gp | 2| 1|
+|Net            | -               | 1 gp  | 1| 1|
+|Pike           | 1d10 piercing   | 5 gp  | 3| 1|
+|Quarterstaff   | 1d6 bludgeoning | 2 sp  | 2| 1|
+|Rapier         | 1d8 piercing    | 25 gp | 2| 1|
+|Scimitar       | 1d6 slashing    | 25 gp | 2| 1|
+|Shortbow       | 1d6 piercing    | 25 gp | 2| 1|
+|Shortsword     | 1d6 piercing    | 10 gp | 2| 1|
+|Sickle         | 1d4 slashing    | 1 gp  | 1| 1|
+|Sling          | 1d4 bludgeoning | 1 sp  | 1| 1|
+|Spear          | 1d6 piercing    | 1 gp  | 2| 1|
+|Trident        | 1d6 piercing    | 5 gp  | 2| 1|
+|War Pick       | 1d8 piercing    | 5 gp  | 2| 1|
+|Warhammer      | 1d8 bludgeoning | 15 gp | 2| 1|
+|Whip           | 1d4 slashing    | 2 gp  | 1| 1|
+
+## Special Criticals
+With some martial melee weapons, critical hits can cause extra effects.  If you have proficiency with martial weapons, pick one weapon type to gain mastery of.  You gain a special ability that activates when you get a critical hit with that weapon.
+
+### Axes
+Includes: Battleaxe, Greataxe, War pick
+
+**Rend.** Decrease target's AC by 2 until it takes an action to repair damaged armor.  This effect cannot stack.
+
+### Blades
+Includes: Shortsword, Longsword, Scimitar, Rapier, Greatsword
+
+**Bleed.** Target begins to bleed, taking 1d6 damage at the start of it's turn until it takes an action to stem the bleeding. This effect cannot stack.
+
+### Polearms
+Includes: Pike, Lance, Glaive, Halberd, Trident
+
+**Rebuff.** You may move the target up to 5 feet in any direction.
+
+### Hammers
+Includes: Flail, Maul, Morningstar, Warhammer
+
+**Stun.** The target cannot use reactions until the start of its next turn.
+
+### Whip
+Includes: Whip
+
+**Disarm.** You can force the target to drop one of the items they are holding.  You may also choose to forgo dealing damage in order to pull the dropped item to you and catch it if you have a free hand.  
+
+### Net
+Includes: Net
+
+**Disparage.** The target is Stunned in addition to being Restrained.
+
+### Weights of Magical Foci/Items
+|Name | Cost | Size|
+|---|---|---|
+|Arcane Focus   | 10 gp | 1|
+|Divine Focus   | 10 gp | T|
+|Druidic Focus  | 1 gp  | T|
+|Spellbook      | 25 gp | 1|
+
+
+# Armor Changes
 Armor is getting a big overhaul.  The biggest change to armor is the addition of the Dodge mechanic, which changes how DEX affects Armor Class.
 
-### Armor Class
+## Armor Class
 A character's armor class no longer depends on that character's DEX modifier.  Characters in light armor have lower AC than characters in heavy armor, which makes sense thematically and encourages the use of heavier armors.  Lightly armored characters are better at dodging a single attacker while heavily armored characters can better hold their own against many small attacks.
 
-#### Dodge
+## Dodge
 Dextrous characters who are not impeded by their armor are able to use their mobility to avoid attacks.  All characters have one dodge action that refreshes at the start of their turn.  Each chracter has a Dodge modifier equal to their DEX modifier, up to the limit of the armor they have equipped.  When a character is hit by an attack, they may use their dodge action to add their dodge modifier to their AC against the attack after the attack roll is made. 
 
-#### Damage Reduction
+AC and Dodge can be represented as follows:
+
+```AC+Dodge```
+
+For example, A character with Leather armor and a DEX modifier of +5 would denote their AC as `12+5`
+
+## Damage Reduction
 Some armors protect their wearer even when an attack hits.  When a characte with armor that provides damage reduction takes bludgeoning, piercing or slashing damage, reduce that damage by the amount of damage reduction(half-proficiency is rounded down)
 
-### Armor Types
+## Armor Types
 
 #### Light Armor
-Light armor is designed to allow for mobility while providing a bit of protection.  Light armor has the highest Dodge limits of any type of armor, allowing high DEX characters to dodge attacks while still providing some protection.  It takes up less slots than heavier armors, allowing characters with less Strength to equip them without worrying about encumbrance.  Finally, light armors are cheaper than other armor types, allowing them to be repaired more easily.  Because of their low base AC and lack of damage reduction, light armors are weak when taking many attacks in one turn.
+Light armor is designed to allow for mobility while providing a bit of protection.  Light armor has the highest Dodge limits of any type of armor, allowing high DEX characters to dodge attacks while still providing some protection.  It takes up less slots than heavier armors, allowing characters with less Strength to equip it without worrying about encumbrance.  Finally, light armors are cheaper than other armor types, allowing them to be repaired more easily.  Because of their low base AC and lack of damage reduction, light armors are weak when taking many attacks in one turn.
 
 #### Medium Armor
 Medium armors strike a balance between mobility and protection.  They often provide enough protection to grant their wearers a bit of damage reduction, while still granting enough mobility for a dodge.  Medium armor provides decent AC, while being light enough to make sure players are not too encumbered. 
@@ -199,6 +308,25 @@ There is more than one kind of shield.  Different shields can be used for differ
 
 ## Equipment and Rule Changes
 
+### Spellcaster Foci
+All casters need something in order to cast their spells.  Different classes require different items for their casting.
+
+#### Bard
+A Bard's magical power comes from their music.  The bard's magical focus is their instrument.  The bard's instrument must be nearby(within 30 ft) in order for the bard to cast.
+
+#### Cleric / Paladin
+Clerics/Paladins require a holy symbol in order to cast their spells.  The symbol can be on an amulet or other jewelry which must be on the Cleric's/Paladin's person, or the symbol could be engraved on a shield, weapon, or other armor, or even tattooed on your person. If this symbol is destroyed or damaged it can prevent or weaken your magic.
+
+#### Druid / Ranger
+Druids/Rangers require a druidic focus for their spellcasting.  This druidic focus must be some natural element that can be kept on their person using an amulet or other jewelry etc.
+
+#### Sorcerer / Warlock
+A sorcerer/warlock requires an arcane focus to channel their arcane powers.  All arcane foci weigh 1 slot and must be held in a hand in order to safely cast spells.
+
+#### Wizard
+Instead of an arcane focus, the wizard requires a spellbook in order to cast their spells.  The spellbook weighs 1 slot and must be on the wizard's person in order for the wizard to cast.
+
+
 ### Light
 Light rules are complicated.  Tracking light sources, where light is dim, and how that affects you character is difficult.  These rule simplifications will make some parts of the light rules easier.
 
@@ -224,9 +352,9 @@ Now that darkvision and the light cantrip are weaker, other light sources become
 **Candle.** For 1 hour, a candle sheds bright light in a 5 foot radius and dim light in a 10 foot radius.
 
 ### Healing
-Healer's Kits are normally used to stabilize downed creatures during combat, but they can be used outside of combat to bind wounds.  Any characters with a Healer's Kit and proficiency in Medicine gain the Healer ability.
+Healer's Kits are normally used to stabilize downed creatures during combat, but they can be used outside of combat to bind wounds.  Any character with a Healer's Kit and proficiency in Medicine gains the Healer ability.
 
-**Healer.** You can spend 5 minutes and 1 chrge of you healer's kit to bind a creature's wounds.  That creature may spend 1 hit die as if they short rested.  Once a creature has gained hi points in this way, thy cannot be healed by this ability again until they have finished a short rest.
+**Healer.** You can spend 5 minutes and 1 charge of you healer's kit to bind a creature's wounds.  That creature may spend 1 hit die as if they short rested.  Once a creature has gained hit points in this way, thy cannot be healed by this ability again until they have finished a short rest.
 
 ### Rations and Resting
 When an adventurer rests, they must eat rations in order to gain the effects of the rest.  Different rations will have different effects on an adventurer during the rest.  You can fit 5 rations into one slot, and different rations can be mixed and matched into one slot.
@@ -302,7 +430,6 @@ It is possible for short or long rests to be interrupted by combat or other thre
 
 -----
 
-### Weights of Weapons
 
 |Name|Damage|Cost|Size|
 |---|---|---|---|
@@ -379,10 +506,14 @@ It is possible for short or long rests to be interrupted by combat or other thre
 ---
 ### Weights of Items
 
+
+\columnbreak
+NOTE: Vials are always trinkets, smaller, more concentrated liquids, while flasks have a size of 1 slot, are larger.
+
 |Name | Cost | Size |
 |---|---|---|
-|Abacus | 2 gp | 1|
-|Acid (vial) | 25 gp | T|
+|Abacus                   | 2 gp | 1|
+|Acid (vial)              | 25 gp | T|
 |Alchemist's Fire (flask) | 50 gp | 1|
 |Anitoxin (vial) | 50 gp | T|
 |Ball Bearings (1000) | 1 gp | 1|
@@ -444,7 +575,7 @@ It is possible for short or long rests to be interrupted by combat or other thre
 |Poison, Basic (vial)| 100 gp | T|
 |Pole (10 ft) | 5 cp| 3|
 |Pot, Iron | 2 gp | 1|
-|Potion of Healing | 50 gp | T|
+|Potion of Healing (vial)| 50 gp | T|
 |Ram, Portable | 4 gp | 6|
 |Rations (1) | 1 sp | T|
 |Rope, Hempen (50 ft) | 1 gp | 1|
@@ -527,3 +658,57 @@ The player who takes on the Itinerant role must understand resting and adventuri
 The Secretary takes notes regarding the events of the session. These notes include what the party does during the session, but also notes on the people they meet and the places they're in.
 
 *Plot Armor.* Once per session, when any member of your party makes an attack roll, ability check, or saving throw, you can roll an additional d20 and use either result. 
+
+# Items
+
+## Magic Items
+Here is a list of Magic Items with descriptions that the party has encountered
+
+**Mithral Chain Mail**
+
+Size: 8 slots
+
+Special Chain Mail armor made of mithral, a silvery-blue metal that is light and strong.  Provides an AC of 16 and a maximum dodge limit of +1.  You can sleep in this armor without becoming uncomfortable.
+
+**Ring of (x) Resistance**
+
+Trinket
+
+While attuned to and wearing this ring, you have resistance to (x) damage.
+
+**Sack of Holding**
+
+Size: 2 slots
+
+Similar to a normal sack, this sack must be held in one hand.  It can store up to 20 slots of items, but no matter how much is inside it, it will always weigh 2 slots. If the bag is ripped or damaged it evaporates, dumping its contents nearby.  If the bag is put into another dimension altering container, bad things will happen.  Luckily, when the sack is dropped, unless it is torn, the items inside are protected.
+
+**Alchemy Jug**
+
+1 slot
+
+This ceramin jug appears to be able to hold a gallon of liquid and weighs 12 pounds whether full or empty.  Sloshing sounds can be heard when it is shaken, even if the jug is empty.  Once per long rest, you can use an action and name one liquid from the table below to cause the jug to produce the chosen liquid.  Afterward, you can uncork and pour that liquid out.  The maximum amount of liquid the jug can produce depends on the liquid named.
+|Liquid| Amount | Effect|
+|---|---|---|
+|Acid| 8 oz | See acid in PHB |
+|Basic Poison | 1/2 oz| One vial.  Deals 1d6 damage|
+|Beer/Ale| 4 gal| |
+|Grease| 1/2 gal| Enough to coat a 5x5 area, making difficult terrain|
+|Health Potion| 1/2 oz | One vial.  Heals 2d4+2|
+|Honey| 1 gal| Enough to feed 4 people cold rations|
+|Oil| 1 quart| Fills 1 flask of oil|
+|Fresh Water| 8 gal| |
+|Salt Water| 12 gal| |
+|Wine| 1 gal | |
+|Cheap Liquor| 4 shots| |
+
+**Silver Raven Figurine**
+
+Large Trinket (3 trinket slots)
+
+If you use an action to speak the command word and throw the figurine to a point on the ground within 60 feet of you, the figurine becomes a living creature.  If the space where the creature would appear is occupied by other creatures or objects, or if there isn't enough space for the creature, the figurine doesn't become a creature.  The creature is friendly toward you and your companions.  It understands your language and obeys your spoken commands.  If you issue no commands, the creature defends itself but takes no other actions.  The silver raven exists for 12 hours.  At the end of this duration it reverts back to its figurine form.  It reverts back to its figurine form early if it drops to 0 hit points or if you use an action to speak the command word again while touching it.  When the raven becomes a figurine again, it can't be used again until 2 days have passed.  While in raven form, you may cast animal messenger on it for free at will.
+
+**+1 Arrows**
+
+1 slot (20)
+
+You have a +1 bonus to attack and damage made with this piece of ammunition, and it counts as a magical weapon.  Once it hits a target, the ammunition is no longer magical.

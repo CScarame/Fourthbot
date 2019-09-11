@@ -1,0 +1,31 @@
+9/10/2019 proposed changes
+- Made enumbrance table more lenient to negative con characters
+- Added Beasts of Burden info
+- Reorganized weapons table
+- Made many weapons lighter
+- Added secretary role and added player role abilities
+
+9/4/2019 version 0.3
+- Increased encumbrance allowed for long distance traveling
+- Added Caster information
+- Updated Container descriptions
+- Added all 3 ration types to item list
+- Added Containers table to make it easier to read, also differentiated among different two handed Containers
+    + Chest
+    + Barrel
+    + Trunk
+
+- Added Caster item rules
+
+- Stackable weapons have been denoted in the Weapon list.  Stackable weapons include
+    + Daggers
+    + Javelins
+
+- Handaxe size decreased from 2 to 1
+- Quarterstaff has been decreased from 3 slot weight to 2
+- Spear, Trident, Warhammer size decreased from 3 to 2
+
+-Reordered everything.  Now Items, Weapons, and Armor are in order, followed by (Other)
+- Added martial weapon Special Criticals
+
+- Spelling fixes

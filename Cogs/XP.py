@@ -202,7 +202,7 @@ class XP(commands.Cog):
         if not is_dm: #Only DMs can use this command
             msg = "DMs can use this command in order to award session xp.  Any awarded XP will show up in the #announcements thread"
         elif not args: #Command doesn't work without arguments
-            msg = "Use **!session (value)** to assign points for a session to current characters
+            msg = "Use **!session (value)** to assign points for a session to current characters"
         elif args: #Actual command
             session_data = []
             points = int(args[0])
