@@ -19,15 +19,16 @@ OOF_RESPONSES = ["Big oof, my dudes",
     "Aw fuck I can't believe you done this",
     "I'm not even surprised tbh", 
     "I am dead :joy::joy::joy:",
-    ""
     '"Bitchy Bic Bickerson" -Alyssa Knight', 
     "I am confusion",
     "You tried", 
     "May I ask why you need this crowdsourcing data?", 
-    "Good job team. This is what I've come to expect from you.", 
+    "Good job, team. This is what I've come to expect from you.", 
     "What does this question mean?",
-    "Keep your *stupid* comments in your pocket!"]
-OOF_RESPONSES_P = [100, 20, 10, 20, 5, 7, 10, 1, 3, 1, 20]
+    "Keep your *stupid* comments in your pocket!",
+    "Provincial as ever, I see.",
+    ]
+OOF_RESPONSES_P = [200, 20, 10, 20, 5, 7, 10, 1, 3, 1, 20, 20]
 
 def setup(bot):
     bot.add_cog(Basic(bot))
