@@ -104,7 +104,7 @@ Ammo can be grabbed from the quiver as part of the Attack action.  Pulling a ran
 Weapons can be stored in the quiver and drawn using a bonus action.  The term sheath can refer to an actual leather sheath or scabbard, or a belt loop or strap that can hold the weapon.
 
 #### Sack
-Sacks require one hand to hold. If a character is caught in combat while holding a sack, they may either drop the bag as a free action and risk damaging the items inside, or they may spend an action setting down the bag carefully.
+Sometimes a backpack is not big enough to hold everything your character wants to carry.  A sack is a large bag that requires at least one hand to hold, but can typically hold up to 15 slots.  If a character is caught in combat while holding a sack, they may either drop the bag as a free action and risk damaging the items inside, or they may spend an action setting down the bag carefully. Retrieving an item from or stowing and item in the sack takes an action.
 
 #### Chest,Barrel,Trunk
 Containers larger than a sack start begin to have weight themselves.  These containers' maximum slots include their own weight (so a chest can carry 22 slots, and will weigh 25 slots etc.).  These containers always require two hands to hold.  If two characters carry a large container jointly, both of them need two hands to hold the container.
@@ -506,6 +506,8 @@ It is possible for short or long rests to be interrupted by combat or other thre
 ---
 ### Weights of Items
 
+NOTE: Vials are always trinkets, smaller, more concentrated liquids, while flasks have a size of 1 slot, are larger.
+
 |Name | Cost | Size |
 |---|---|---|
 |Abacus                   | 2 gp | 1|
@@ -571,7 +573,7 @@ It is possible for short or long rests to be interrupted by combat or other thre
 |Poison, Basic (vial)| 100 gp | T|
 |Pole (10 ft) | 5 cp| 3|
 |Pot, Iron | 2 gp | 1|
-|Potion of Healing | 50 gp | T|
+|Potion of Healing (vial)| 50 gp | T|
 |Ram, Portable | 4 gp | 6|
 |Rations (1) | 1 sp | T|
 |Rope, Hempen (50 ft) | 1 gp | 1|
@@ -652,6 +654,13 @@ The Itinerant tracks the date and time, how far the group can travel, and how ma
 The Secretary takes notes regarding the events of the session. These notes include what the party does during the session, but also notes on the people they meet and the places they're in.
 
 *Plot Armor.* Once per session, when any member of your party makes an attack roll, ability check, or saving throw, you can roll an additional d20 and use either result.
+
+*Relax.* Once per session, during a short/long rest, the Itinerant can activate this ability and all party members can immediately use a free hit die.
+
+#### Secretary
+The Secretary takes notes regarding the events of the session. These notes include what the party does during the session, but also notes on the people they meet and the places they're in.
+
+*Plot Armor.* Once per session, when any member of your party makes an attack roll, ability check, or saving throw, you can roll an additional d20 and use either result. 
 
 # Items
 
