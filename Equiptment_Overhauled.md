@@ -28,8 +28,8 @@ A player holding more items than their carrying capacity will take on levels of 
 |+1            |+1  |+2  |+3  |+4  |+5  |+6  |+7  |+8  |+9  |+10 |
 |+0            |+1  |+2  |+2  |+3  |+3  |+4  |+4  |+5  |+5  |+6  |
 |-1            |+1  |+1  |+2  |+2  |+3  |+3  |+4  |+4  |+5  |+5  |
-|-2            |+0  |+1  |+1  |+1  |+2  |+2  |+2  |+3  |+3  |+3  |
-|-3            |+0  |+0  |+0  |+0  |+1  |+1  |+1  |+1  |+1  |+2  |
+|-2            |+0  |+1  |+1  |+1  |+2  |+2  |+2  |+3  |+3  |+4  |
+|-3            |+0  |+0  |+1  |+1  |+1  |+2  |+2  |+2  |+2  |+3  |
 
 
 Each encumbrance levels adds an additional negative effect during combat.  These effects stack until your character can no longer move.
@@ -66,7 +66,7 @@ Many gemstones are trinkets that are worth more than their weight in gold coins.
 
 On the item table, trikets are denoted by having a size of T(meaning trinket)
 
-\pagebreak
+----
 
 ### Collective items
 Some items, such as rations, ammuniton, or oil flasks can fit more than one into a single item slot.  For example, up to 5 cold rations or 20 arrows can fit in a single item slot.  While you can fit up to 5 rations in a single item slot, if you only have 1 ration, it still takes up an item slot, as does a single arrow.
@@ -110,7 +110,39 @@ Sacks require one hand to hold. If a character is caught in combat while holding
 Containers larger than a sack start begin to have weight themselves.  These containers' maximum slots include their own weight (so a chest can carry 22 slots, and will weigh 25 slots etc.).  These containers always require two hands to hold.  If two characters carry a large container jointly, both of them need two hands to hold the container.
 
 #### Saddlebags
-A variant bag that can only be carried by beasts of burden.  Saddlebags can carry up to 20 item slots.  Beasts of burden with a higher carrying capacity can only carry more by using a cart or wagon of some sort.  
+A variant bag that can only be carried by beasts of burden.  Saddlebags can carry up to 20 item slots.  Beasts of burden with a higher carrying capacity can only carry more by using a cart or wagon of some sort. Retrieving an item from or stowing and item in the saddlebags takes an action.
+
+### Beasts of Burden
+Different beasts of burden can handle different loads. Mounts can carry saddlebags, carts, or wagons, and can carry a rider. For the purpose of mounts, small creatures are 15 slots and Medium creatures are 20 slots.
+
+Most animals have a daily traveling distance equal to humanoids' fast pace. When animals are carrying more than half their capacity, they cannot dash. For example, a donkey with 42 slot capacity can carry 21 slots at top speed, but 22 slots or more will prevent it from dashing. Note that a mount with an especially capable hauling ability with be worth more when purchasing/selling mounts.
+|**Item**|**Cost**|**Speed**|**Slot**<br>**Capacity**|
+|:---|:---:|:---:|---:|
+Donkey/Mule| 8 gp| 40 ft| 20+4d10 slots
+Horse, draft | 50 gp | 40 ft | 30+4d10 slots
+Horse, riding* | 75 gp | 60 ft | 30+2d6 slots
+Pony | 30 gp | 40 ft| 16+4d6 slots
+Warhorse* | 400 gp | 60 ft | 40+2d10 slots
+
+\* Warhorses and Riding Horses can dash even when carrying more than half their slot capacity.
+
+Carts or wagons can be pulled by one animal or multiple animals. These are less versatile when it comes to traveling and must usually stick to roads. These vehicles have their own carrying capacity. To the animal, the number of slots to haul the vehicle is constant as long as the vehicle isn't overloaded. If the vehicle is overloaded, the haul weight is doubled and travel speed is halved. If the vehicle is overloaded to double its carrying capacity, it breaks.
+
+|**Item**|**Cost**|**Haul Weight**|**Slot**<br>**Capacity**|
+|:---|:---:|:---:|---:|
+Saddlebags| 0 gp| (weight of items in bags)| 20 slots
+Cart | 15 gp| 22 slots| 50 slots
+Wagon | 35 gp| 60 slots| 150 slots
+Carriage| 100gp| 100 slots | 300 slots
+
+|**Item**|**Cost**|**Weight**
+|:---|:---:|:---:|
+Feed (per day) | 5 cp| 1 slot
+Stabling (per day) | 5 sp| -
+A mount doesn't need feed if they can 
+spend the day grazing.
+
+-----
 
 # Weapon Changes
 Any changes to weapons can be found here.
@@ -225,8 +257,6 @@ Light armor is designed to allow for mobility while providing a bit of protectio
 #### Medium Armor
 Medium armors strike a balance between mobility and protection.  They often provide enough protection to grant their wearers a bit of damage reduction, while still granting enough mobility for a dodge.  Medium armor provides decent AC, while being light enough to make sure players are not too encumbered. 
 
-\pagebreak
-
 #### Heavy Armor
 Heavy armor gives up mobility to provide the ultimate protection for the wearer.  Heavy armor boasts the highest AC of any armor type, but does not allow the wearer to dodge at all.  It is best suited for high STR characters who can equip the armor without becoming too encumbered.  Heavy armor also provides the highest damage reduction of any armor type, making it best suited for fighting multiple enemies at once.
 
@@ -257,8 +287,6 @@ Heavy armor gives up mobility to provide the ultimate protection for the wearer.
 
 \* Disadvantage on stealth checks
 
-\columnbreak
-
 ### Shields
 There is more than one kind of shield.  Different shields can be used for different purposes.
 
@@ -267,7 +295,7 @@ There is more than one kind of shield.  Different shields can be used for differ
 |---|---|---|---|---|
 | Buckler | +0 | Bonus Action | Parry and Riposte | 2 |
 | Round Shield | +0 | Bonus Action | Deflect | 2 |
-| Shield | +2 | 1 Action | None | 3|
+| Kite Shield | +2 | 1 Action | None | 3|
 | Tower Shield | +3 | 1 Action | Shield Defense | 5 |
 
 **Parry and Riposte.**  As a reaction, when your character is attacked, you may add your Dodge modifier to your AC.  If your AC is greater than the attack roll by 6 or more you make make an attack of opportunity against the attacker.  You may not use your dodge action on this attack.
@@ -275,6 +303,8 @@ There is more than one kind of shield.  Different shields can be used for differ
 **Deflect.** Add +3 to your Dodge modifier. Your Dodge modifier cannot be higher than your armor's Dodge Limit.
 
 **Shield Defense**  As a reaction, if you aren't incapacitated, you can add your shield's AC bonus to any Dexterity saving throw you make against a spell or other harmful effect that targets you, and you do not gain disadvantage on this check from encumbrance.
+
+-----
 
 ## Equipment and Rule Changes
 
@@ -315,9 +345,6 @@ Now that darkvision and the light cantrip are weaker, other light sources become
  
 **Lamp.** A lamp casts bright light in a 15 foot radius and dim light in a 30 foot radius. Once lit, it burns for 6 hours on a flask (1 pint) of oil.  A lamp can be attached to a character’s belt while still lit as an action, allowing a character to use both hands while it is still lit, but if the lamp is struck while lit, it will cover the character in oil and deal fire damage to them.
 
-\pagebreak
-
-
 **Lantern, Hooded.** A hooded lantern casts bright light in a 30 foot radius and dim light in a 60 foot radius.  Once lit, it burns for 6 hours on a flask of oil.  As an action, you can lower the hood, reducing the light to dim light in a 5 foot radius.  Also as an action, you may attach the hooded lantern to a belt while still lit, allowing a character to use both hands while it is still lit, but if the lantern is struck while lit, it will cover the character in oil and deal fire damage to them.
 
 **Lantern, Bullseye.** A bullseye lantern casts bright light in a 60 foot cone and dim light in a 120 foot cone.  Once lit, it burns for 6 hours on a flask of oil.  As an action, you may attach the hooded lantern to a belt while still lit, allowing a character to use both hands while it is still lit, but if the lantern is struck while lit, it will cover the character in oil and deal fire damage to them.
@@ -347,7 +374,6 @@ Fine rations take a long time to prepare and require specialized equipment.  The
 |Hot Rations| Characters can use hit dice normally, and upon finishing the meal, characters regain half their hit dice.|Characters regain all of their hit points and all of their hit dice.|
 |Fine Rations| Characters regain all of their hit dice, and recover one level of exhaustion.  Some classes also gain other bonuses. | Characters regain all of their hit points and all of their hit dice.  All characters eating the meal gain temporary hit points equal to the Cook's Level + WIS modifier + proficiency bonus.  These temporary hit points expire after 24 hours.  Recover two levels of exhaustion instead of one.|
 
-\pagebreak
 
 |Class| Recovery|
 |---|---|
@@ -379,10 +405,6 @@ All players gain the Forager ability, allowing they to search for food.
 #### Exhaustion
 The morning after a long rest, each character recovers one level of exhaustion.
 
-\columnbreak
-
-.
-
 ### Resting Conditions
 
 While taking a long rest in the wild inclement weather or other conditions could prevent your character from resting properly.  If these problems are not addressed your character has a chance of taking a level of exhaustion after the long rest.  Different conditions will add modifiers to the DC of a CON check you must make in order to not take a level of exhaustion.
@@ -406,143 +428,190 @@ If you really don't want to take that level of exhaustion, for each 2 hours that
 #### Order of Rests
 It is possible for short or long rests to be interrupted by combat or other threats.  Benefits of a rest may not be acquired if it is interrupted.  For short rests, characters recover when they finish eating.  For long rests, characters recover at the end of the 8 hour period as long as they have slept some and eaten.  The CON save against exhaustion occurs immediately after the character recovers.
 
-\pagebreak
+-----
 
 
+|Name|Damage|Cost|Size|
+|---|---|---|---|
+|*Martial Melee Weapons*|         |       |  |
+|Battleaxe      | 1d8 slashing    | 10gp  | 2|
+|Flail          | 1d8 bludgeoning | 10 gp | 1|
+|Glaive         | 1d10 slashing   | 20 gp | 3|
+|Greataxe       | 1d12 slashing   | 30 gp | 3|
+|Greatsword     | 2d6 slashing    | 50 gp | 3|
+|Halberd        | 1d10 slashing   | 20 gp | 3|
+|Lance          | 1d12 piercing   | 10 gp | 3|
+|Longsword      | 1d8 slashing    | 15 gp | 2|
+|Maul           | 2d6 bludgeoning | 10 gp | 3|
+|Morningstar    | 1d8 piercing    | 15 gp | 2|
+|Pike           | 1d10 piercing   | 5 gp  | 3|
+|Rapier         | 1d8 piercing    | 25 gp | 2|
+|Scimitar       | 1d6 slashing    | 25 gp | 1|
+|Shortsword     | 1d6 piercing    | 10 gp | 1|
+|Trident        | 1d6 piercing    | 5 gp  | 2|
+|War Pick       | 1d8 piercing    | 5 gp  | 2|
+|Warhammer      | 1d8 bludgeoning | 15 gp | 2|
+|Whip           | 1d4 slashing    | 2 gp  | 1|
+|*Simple Melee Weapons*|          |       |  |
+|Club           | 1d4 bludgeoning | 1 sp  | 1|
+|Dagger(2)      | 1d4 piercing    | 2 gp  | 1|
+|Greatclub      | 1d8 bludgeoning | 2 sp  | 3|
+|Handaxe        | 1d6 slashing    | 5 gp  | 1|
+|Javelin(5)     | 1d6 piercing    | 5 sp  | 2|
+|Light Hammer(2)| 1d4 bludgeoning | 2 gp  | 1|
+|Mace           | 1d6 bludgeoning | 5 gp  | 2|
+|Quarterstaff   | 1d6 bludgeoning | 2 sp  | 2|
+|Sickle         | 1d4 slashing    | 1 gp  | 1|
+|Spear          | 1d6 piercing    | 1 gp  | 2|
+|*Martial Ranged Weapons*|        |       |  |
+|Blowgun        | 1 piercing      | 10 gp | 1|
+|Crossbow, Hand | 1d6 piercing    | 75 gp | 1|
+|Crossbow, Heavy| 1d10 piercing   | 50 gp | 3|
+|Longbow        | 1d8 piercing    | 50 gp | 3|
+|Net            |                 | 1 gp  | 1|
+|*Simple Ranged Weapons*|         |       |  |
+|Crossbow, Light| 1d8 piercing    | 25 gp | 2|
+|Dart           | 1d4 piercing    | 5 cp  | T|
+|Shortbow       | 1d6 piercing    | 25 gp | 2|
+|Sling          | 1d4 bludgeoning | 1 sp  | 1|
+|*Ammunition*   |                 |       |  |
+|Ammo, Arrows (20) |              | 1 gp  | 1|
+|Ammo, Bolts (20) |               | 1 gp  | 1|
+|Ammo, Needles (50) |             | 1 gp  | 1|
+|Ammo, Stones (20) |              | 4 cp  | 1|
+|*Spellcasting Foci*|             |       |  |
+|Arcane Focus, Crystal|           | 25 gp | T|
+|Arcane Focus, Orb |              | 15 gp |LT|
+|Arcane Focus, Rod |              | 10 gp | 1|
+|Arcane Focus, Staff|             | 5 gp  | 2|
+|Arcane Focus, Wand |             | 10 gp | 1|
+|Druidic Focus, Mistletoe |       | 1 gp  | T|
+|Druidic Focus, Staff |           | 5 gp  | 2|
+|Druidic Focus, Totem |           | 1 gp  | 1|
+|Druidic Focus, Wand  |           | 10 gp | 1|
+|Holy Symbol, Amulet |            | 25 gp | T|
+|Holy Symbol, Emblem |            | 5 gp  | 1|
+|Holy Symbol, Reliquary |         | 5 gp  | 1|
+|Holy Water (flask) |             | 25 gp | 1|
+|Instrument, Bagpipes|            | 30 gp | 3|
+|Instrument, Drum |               | 6 gp  | 2|
+|Instrument, Dulcimer |           | 25 gp | 3|
+|Instrument, Flute |              | 2 gp  | 1|
+|Instrument, Horn |               | 3 gp  | 2|
+|Instrument, Lute |               | 35 gp | 2|
+|Instrument, Lyre |               | 30 gp | 2|
+|Instrument, Shawm |              | 2 gp  | 2|
+|Instrument, Viol |               | 30 gp | 2|
 
-
-\columnbreak
-NOTE: Vials are always trinkets, smaller, more concentrated liquids, while flasks have a size of 1 slot, are larger.
+---
+### Weights of Items
 
 |Name | Cost | Size |
 |---|---|---|
 |Abacus                   | 2 gp | 1|
 |Acid (vial)              | 25 gp | T|
 |Alchemist's Fire (flask) | 50 gp | 1|
-|Ammo, Arrows (20)        | 1 gp | 1|
-|Ammo, Bolts (20)         | 1 gp | 1|
-|Ammo, Needles (50)       | 1 gp | 1|
-|Anitoxin (vial)          | 50 gp | T|
-|Ball Bearings (1000)     | 1 gp | 1|
-|Bedroll                  | 1 gp | 2|
-|Bell                     | 1 gp | 1|
-|Blanket                  | 5 sp | 1|
-|Block & Tackle           | 1 gp | 1|
-|Book                     | 25 gp | 1|
-|Bottle, Glass            | 2 gp | 1|
-|Bucket                   | 5 cp | 2|
-|Caltrops                 | 1 gp | 1|
-|Candle                   | 1 cp | T|
-|Chain (10 ft)            | 5 gp | 1|
-|Chalk (1 piece)          | 1 cp | T|
-|Clothes, Common          | 5 sp | 1|
-|Clothes, Costume         | 5 gp | 2|
-|Clothes, Fine            | 15 gp | 2|
-|Clothes, Traveler's      | 2 gp | 1|
-|Component Pouch          | 25 gp | 1|
-|Crowbar                  | 2 gp | 2|
-|Fishing Tackle           | 1 gp | 1|
-|Flask or Tankard         | 2 cp | 1|
-|Game, Cards              | 5 sp | 1|
-|Game, Dice               | 1 sp | 1|
-|Game, Dragonchess        | 1 gp | 1|
+|Anitoxin (vial) | 50 gp | T|
+|Ball Bearings (1000) | 1 gp | 1|
+|Barrel* | 2 gp | 9|
+|Bedroll | 1 gp | 2|
+|Bell | 1 gp | 1|
+|Blanket | 5 sp | 1|
+|Block & Tackle | 1 gp | 1|
+|Book | 25 gp | 1|
+|Bottle, Glass | 2 gp | 1|
+|Bucket | 5 cp | 2|
+|Caltrops | 1 gp | 1|
+|Candle | 1 cp | T|
+|Case* | 1 gp | 1|
+|Chain (10 ft) | 5 gp | 1|
+|Chalk (1 piece) | 1 cp | T|
+|Chest* | 5 gp | 6|
+|Clothes, Common | 5 sp | 1|
+|Clothes, Costume | 5 gp | 2|
+|Clothes, Fine | 15 gp | 2|
+|Clothes, Traveler's | 2 gp | 1|
+|Component Pouch | 25 gp | 1|
+|Crowbar | 2 gp | 2|
+|Fishing Tackle | 1 gp | 1|
+|Flask or Tankard | 2 cp | 1|
+|Game, Cards | 5 sp | 1|
+|Game, Dice | 1 sp | 1|
+|Game, Dragonchess | 1 gp | 1|
+|Game, 3 Dragon Ante | 1 gp | 1|
+|Grappling Hook | 2 gp | 1|
+|Hammer | 1 gp | 1|
+|Hammer, Sledge | 2 gp | 3|
+|Holy Water (flask) | 25 gp | 1|
+|Hourglass | 25 gp | 1|
+|Hunting Trap | 5 gp | 1|
+|Ink | 10 gp | T|
+|Ink Pen | 2 cp | T|
+|Jug or Pitcher | 2 cp | 1|
+|Kit, Climbers | 25 gp | 1|
+|Kit, Disguise | 25 gp | 1|
+|Kit, Forgery  | 15 gp | 1|
+|Kit, Healer's | 5 gp  | 1|
+|Kit, Mess | 2 sp | 1|
+|Kit, Poisoner's | 50 gp | 1|
+|Ladder (10 ft) | 1 sp | 3|
+|Lamp | 5 sp | 1|
+|Lantern, Bullseye | 10 gp | 1|
+|Lantern, Hooded   | 5 gp | 1|
+|Lock | 10 gp | 1|
+|Magnifying Glass | 100 gp | 1|
+|Manacles | 2 gp | 1|
+|Mirror, Steel | 5 gp | 1|
+|Oil (flask) | 1 sp | 1|
+|Paper (1 sheet) | 2 sp | T|
+|Parchment (1 sheet) | 1 sp | T|
+|Perfume (vial) | 5 gp | T|
+|Pick, Miner's | 2 gp | 3|
+|Piton | 5 cp | 1|
+|Poison, Basic (vial)| 100 gp | T|
+|Pole (10 ft) | 5 cp| 3|
+|Pot, Iron | 2 gp | 1|
+|Potion of Healing | 50 gp | T|
+|Ram, Portable | 4 gp | 6|
+|Rations (1) | 1 sp | T|
+|Rope, Hempen (50 ft) | 1 gp | 1|
+|Rope, Silk (50 ft) | 10 gp | 1|
+|Scale, Merchant's | 5 gp | 1|
+|Sealing Wax | 5 sp | T|
+|Shovel | 2 gp | 3|
+|Signal Whistle | 5 cp | T|
+|Signet Ring | 5 gp | T|
+|Soap | 2 cp | T|
+|Spellbook | 50 gp | 1|
+|Spikes, Iron (10) | 1 gp | 1|
+|Spyglass | 1000 gp | 1|
+|Tent, Two-person | 2 gp | 3|
+|Tinderbox | 5 sp | 1|
+|Tools, Alchemist | 50 gp | 2|
+|Tools, Brewer | 20 gp | 2|
+|Tools, Calligrapher | 10 gp | 1|
+|Tools, Carpenter | 8 gp | 1|
+|Tools, Cartographer | 15 gp | 1|
+|Tools, Cobbler | 5 gp | 1|
+|Tools, Cook | 1 gp | 2|
+|Tools, Glassblower | 30 gp | 2|
+|Tools, Jeweler | 25 gp | 1|
+|Tools, Leatherworker | 5 gp | 2|
+|Tools, Mason | 10 gp | 2|
+|Tools, Navigator | 25 gp | 1|
+|Tools, Painter | 10 gp | 2|
+|Tools, Potter | 10 gp | 2|
+|Tools, Smith | 20 gp | 2|
+|Tools, Thieves | 25 gp | 1|
+|Tools, Tinker | 50 gp | 1|
+|Tools, Weaver | 1 gp | 2|
+|Tools, Woodcarver | 1 gp | 1|
+|Torch | 1 cp | 1|
+|Vial | 1 gp | T|
+|Waterskin | 2 sp | 1|
+|Whetstone | 1 cp | 1|
 
-\pagebreak
-
-|Name | Cost | Size |
-|---|---|---|
-|Game, 3 Dragon Ante      | 1 gp | 1|
-|Grappling Hook           | 2 gp | 1|
-|Hammer                   | 1 gp | 1|
-|Hammer, Sledge           | 2 gp | 3|
-|Holy Symbol, Amulet      | 5 gp | 1|
-|Holy Symbol, Emblem      | 5 gp | 1|
-|Holy Symbol, Reliquary   | 5 gp | 1|
-|Holy Water (flask)       | 25 gp | 1|
-|Hourglass                | 25 gp | 1|
-|Hunting Trap             | 5 gp | 1|
-|Ink                      | 10 gp | T|
-|Ink Pen                  | 2 cp | T|
-|Instrument, Bagpipes     | 30 gp | 3|
-|Instrument, Drum         | 6 gp | 2|
-|Instrument, Dulcimer     | 25 gp | 3|
-|Instrument, Flute        | 2 gp | 1|
-|Instrument, Horn         | 3 gp | 2|
-|Instrument, Lute         | 35 gp | 2|
-|Instrument, Lyre         | 30 gp | 2|
-|Instrument, Shawm        | 2 gp | 2|
-|Instrument, Viol         | 30 gp | 2|
-|Jug or Pitcher           | 2 cp | 1|
-|Kit, Climbers            | 25 gp | 1|
-|Kit, Disguise            | 25 gp | 1|
-|Kit, Forgery             | 15 gp | 1|
-|Kit, Healer's            | 5 gp  | 1|
-|Kit, Mess                | 2 sp | 1|
-|Kit, Poisoner's          | 50 gp | 1|
-|Ladder (10 ft)           | 1 sp | 3|
-|Lamp                     | 5 sp | 1|
-|Lantern, Bullseye        | 10 gp | 1|
-|Lantern, Hooded          | 5 gp | 1|
-|Lock                     | 10 gp | 1|
-|Magnifying Glass         | 100 gp | 1|
-|Manacles                 | 2 gp | 1|
-|Mirror, Steel            | 5 gp | 1|
-|Oil (flask)              | 1 sp | 1|
-|Paper (1 sheet)          | 2 sp | T|
-|Parchment (1 sheet)      | 1 sp | T|
-|Perfume (vial)           | 5 gp | T|
-|Pick, Miner's            | 2 gp | 3|
-|Piton                    | 5 cp | 1|
-
-|Name | Cost | Size |
-|---|---|---|
-|Poison, Basic (vial)     | 100 gp | T|
-|Pole (10 ft)             | 5 cp| 3|
-|Pot, Iron                | 2 gp | 1|
-|Potion of Healing        | 50 gp | 1|
-|Ram, Portable            | 4 gp | 6|
-|Rations, Cold            | 5 cp | .2|
-|Rations, Hot             | 5 sp | .2|
-|Rations, Fine            | 5 gp | .2|
-|Rope, Hempen (50 ft)     | 1 gp | 1|
-|Rope, Silk (50 ft)       | 10 gp | 1|
-|Scale, Merchant's        | 5 gp | 1|
-|Sealing Wax              | 5 sp | T|
-|Shovel                   | 2 gp | 3|
-|Signal Whistle           | 5 cp | T|
-|Signet Ring              | 5 gp | T|
-|Soap                     | 2 cp | T|
-|Spellbook                | 50 gp | 1|
-|Spikes, Iron (10)        | 1 gp | 1|
-|Spyglass                 | 1000 gp | 1|
-|Tent, Two-person         | 2 gp | 3|
-|Tinderbox                | 5 sp | 1|
-|Tools, Alchemist         | 50 gp | 2|
-|Tools, Brewer            | 20 gp | 2|
-|Tools, Calligrapher      | 10 gp | 1|
-|Tools, Carpenter         | 8 gp | 1|
-|Tools, Cartographer      | 15 gp | 1|
-|Tools, Cobbler           | 5 gp | 1|
-|Tools, Cook              | 1 gp | 2|
-|Tools, Glassblower       | 30 gp | 2|
-|Tools, Jeweler           | 25 gp | 1|
-|Tools, Leatherworker     | 5 gp | 2|
-|Tools, Mason             | 10 gp | 2|
-|Tools, Navigator         | 25 gp | 1|
-|Tools, Painter           | 10 gp | 2|
-|Tools, Potter            | 10 gp | 2|
-|Tools, Smith             | 20 gp | 2|
-|Tools, Thieves           | 25 gp | 1|
-|Tools, Tinker            | 50 gp | 1|
-|Tools, Weaver            | 1 gp | 2|
-|Tools, Woodcarver        | 1 gp | 1|
-|Torch                    | 1 cp | 1|
-|Vial                     | 1 gp | T|
-|Waterskin                | 2 sp | 1|
-|Whetstone                | 1 cp | 1|
-
-\pagebreak
-
+-----
 
 ## Bonus Experience
 
@@ -554,29 +623,35 @@ First, a player can turn in their updated character sheet before the start of ea
 
 **Prepared.** A player gets 500 bonus experience for giving a copy of their character sheet to the DMs before the start of their session.
 
+-----
+
 ### Player Roles
 
 Players can also earn bonus experience for things they do during the session.  While there are many things that the DM must do during the session, many of these tasks can be accomplished by the players, allowing the game to progress more quickly.  Players will be rewarded with bonus experience and special abilities for taking on the roles below.
 
-##### Accountant
-The Accountant is tasked with tracking each character's inventory and treasure.  They must ensure each character's inventory does not exceed their carrying capacity, and track the wealth they possess.  The Accountant will also track the value of valuable treasures that are found during the session.  In add
+#### Accountant
+The Accountant is tasked with tracking each character's inventory and treasure.  They must ensure each character's inventory does not exceed their carrying capacity, and track the wealth they possess.  The Accountant will also track the value of valuable treasures that are found during the session.
 
 The player who takes on the Accountant role must have a strong knowledge of the new equipment rules and must be focused on the game throughout the session to keep proper track of each character's inventory.
 
-**Great Appraisal.** The Accountant has a better idea of what treasures and other objects are worth, and so can make better deals wen buying or selling equipment and treasures.
+*Great Appraisal.* The Accountant has a better idea of what treasures and other objects are worth, and so can make better deals when buying or selling equipment and treasures. Once per session, when your party finds loot, you can activate this ability to find about 10gp more of loot.
 
-
-##### Tactician
+#### Tactician
 The Tactician is tasked with tracking many things during combat, including damage dealt to enemies, enemy reactions and dodge actions, enemy conditions, tactical cover, and lighting conditions.  
 
 The player who takes on the Tactician role must be well versed in combat rules regarding light, cover, and conditions, and must be able to track the damage dealt to enemies.
 
-**Size-up.** Once per session, as an action, the Tactician can identify the exact amount of hitpoints an enemy has.
+*Size-up.* Once per session, as an action, the Tactician can identify the exact amount of hitpoints an enemy has.
 
-##### Itinerant
-The Itinerant tracks the date and time, how far the group can travel, and how many rations each character has.  They also track exhaustion and other long-lasting conditions on characters.
+#### Itinerant
+The Itinerant tracks the date and time, how far the group can travel, and how many rations the party has. They also track exhaustion and other long-lasting conditions on characters. The player who takes on the Itinerant role must understand resting and adventuring rules, both old and new, and be able to track time.
 
-The player who takes on the Itinerant role must understand resting and adventuring rules, both old and new, and be able to track time.
+*Relax.* Once per session, during a short/long rest, the Itinerant can activate this ability and all party members can immediately use a free hit die.
+
+#### Secretary
+The Secretary takes notes regarding the events of the session. These notes include what the party does during the session, but also notes on the people they meet and the places they're in.
+
+*Plot Armor.* Once per session, when any member of your party makes an attack roll, ability check, or saving throw, you can roll an additional d20 and use either result.
 
 # Items
 
