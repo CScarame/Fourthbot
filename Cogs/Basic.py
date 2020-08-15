@@ -80,8 +80,19 @@ class Basic(commands.Cog):
                     "**!roll 1d20 2d12 3d8**")
             await ctx.send(msg)
         if len(words) == 2 and words[1]=='character':
-            words = ['!roll', '4d6', '4d6', '4d6', '4d6', '4d6', '4d6']
-            sum_value = 3
+            rolls,sums = [], []
+            for i in range(7):
+                temp_rolls = []
+                for j in range(4):
+                    temp_rolls.append(random.randint(1,6))
+                temp_rolls.sort(reverse = True)
+                rolls.append(temp_rolls)
+                sums.append(sum(temp_rolls[0:3]))
+            sums.sort(reverse=True)
+            out_string = 'Stats:{0}, {1}, {2}, {3}, {4}, {5}'.format(*sums)
+            out_string = out_string + '\n{}'.format(str(rolls))
+            await ctx.send(out_string)
+            return
         output = []
         for die in words[1:]:
             matchObj = re.match(r'(\d*)d(\d+)', die)
@@ -98,6 +109,7 @@ class Basic(commands.Cog):
             for i in range(quantity):
                 rolls.append(random.randint(1,die_size))
             output.append(rolls)
+            
             
             out_string = ''
             group_sums = 0
